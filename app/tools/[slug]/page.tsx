@@ -8,6 +8,7 @@ import { comparisons } from "@/data/comparisons";
 import { industries } from "@/data/industries";
 import ToolLogo from "@/components/ToolLogo";
 import AffiliateBanner from "@/components/AffiliateBanner";
+import AuthorByline from "@/components/AuthorByline";
 
 export async function generateStaticParams() {
   return getAllSlugs().map((slug) => ({ slug }));
@@ -330,6 +331,9 @@ export default async function ToolPage({ params }: { params: Promise<{ slug: str
 
         {/* FTC Affiliate Disclosure */}
         <AffiliateBanner />
+
+        {/* Author byline */}
+        <AuthorByline variant="compact" lastUpdated="March 2026" />
 
         {/* Top leaderboard ad */}
         <div className="ad-placeholder w-full mb-8" style={{ height: "90px" }}>
@@ -689,6 +693,9 @@ export default async function ToolPage({ params }: { params: Promise<{ slug: str
                 ))}
               </div>
             </section>
+
+            {/* Author byline — full card at end of content */}
+            <AuthorByline variant="full" lastUpdated="March 2026" />
 
           </div>
 

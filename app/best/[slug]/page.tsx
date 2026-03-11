@@ -3,6 +3,7 @@ import { bestForPages, getBestForPage } from "../../../data/best-for";
 import { notFound } from "next/navigation";
 import Link from "next/link";
 import AffiliateBanner from "@/components/AffiliateBanner";
+import AuthorByline from "@/components/AuthorByline";
 
 // ─── Static generation ────────────────────────────────────────────────────────
 export function generateStaticParams() {
@@ -148,6 +149,9 @@ export default async function BestForPage({
 
         {/* ─── Affiliate Disclosure ─────────────────────────────────────────────── */}
         <AffiliateBanner variant="inline" />
+
+        {/* ─── Author Byline ────────────────────────────────────────────────────── */}
+        <AuthorByline variant="compact" lastUpdated="March 2026" />
 
         {/* ─── Hero ─────────────────────────────────────────────────────────────── */}
         <header style={{ marginBottom: "2.5rem" }}>
@@ -756,6 +760,10 @@ export default async function BestForPage({
             </Link>
           </div>
         </section>
+
+        {/* ─── Author Byline Card ───────────────────────────────────────────────── */}
+        <AuthorByline variant="full" lastUpdated="March 2026" />
+
       </div>
     </>
   );

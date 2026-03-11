@@ -6,6 +6,7 @@ import { getComparison, getAllComparisonSlugs } from "@/data/comparisons";
 import { getToolBySlug, tools } from "@/data/tools";
 import type { Metadata } from "next";
 import AffiliateBanner from "@/components/AffiliateBanner";
+import AuthorByline from "@/components/AuthorByline";
 
 // Parse slug like "spotio-vs-salesrabbit" → ["spotio", "salesrabbit"]
 function parseSlugs(slug: string): [string, string] | null {
@@ -167,6 +168,9 @@ export default async function ComparisonPage({ params }: { params: Promise<{ slu
         {/* FTC Affiliate Disclosure */}
         <AffiliateBanner />
 
+        {/* Author byline */}
+        <AuthorByline variant="compact" lastUpdated="March 2026" />
+
         <div className="ad-placeholder w-full mb-8" style={{ height: "90px" }}>Advertisement — 728×90</div>
 
         {/* Tool overview cards */}
@@ -307,6 +311,10 @@ export default async function ComparisonPage({ params }: { params: Promise<{ slu
             ← Compare other tools
           </Link>
         </div>
+
+        {/* Author byline — full card at end */}
+        <AuthorByline variant="full" lastUpdated="March 2026" />
+
       </main>
       <Footer />
     </div>
