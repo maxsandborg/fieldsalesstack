@@ -1,40 +1,12 @@
-"use client";
+// Server component — no "use client". All article content renders as HTML.
+// Only TocHighlighter and FaqAccordion are client components.
 
-import { useEffect, useRef, useState } from "react";
 import Link from "next/link";
 import type { Stack, StackTool } from "../../../data/stacks";
+import TocHighlighter from "../../../components/TocHighlighter";
+import FaqAccordion from "../../../components/FaqAccordion";
 
-const TOC_SECTIONS = [
-  { id: "overview", label: "Overview" },
-  { id: "cost", label: "Total Cost" },
-  { id: "tools", label: "The Stack" },
-  { id: "why", label: "Why It Works" },
-  { id: "verdict", label: "Verdict" },
-  { id: "faq", label: "FAQ" },
-];
-
-export default function StackPageClient({ stack }: { stack: Stack }) {
-  const [activeSection, setActiveSection] = useState("overview");
-  const observerRef = useRef<IntersectionObserver | null>(null);
-
-  useEffect(() => {
-    observerRef.current = new IntersectionObserver(
-      (entries) => {
-        entries.forEach((entry) => {
-          if (entry.isIntersecting) {
-            setActiveSection(entry.target.id);
-          }
-        });
-      },
-      { rootMargin: "-20% 0px -70% 0px" }
-    );
-    TOC_SECTIONS.forEach(({ id }) => {
-      const el = document.getElementById(id);
-      if (el) observerRef.current?.observe(el);
-    });
-    return () => observerRef.current?.disconnect();
-  }, []);
-
+export default function StackPageContent({ stack }: { stack: Stack }) {
   return (
     <>
       {/* Hero */}
@@ -57,7 +29,6 @@ export default function StackPageClient({ stack }: { stack: Stack }) {
           }}
         />
         <div style={{ maxWidth: 1200, margin: "0 auto", position: "relative" }}>
-          {/* Breadcrumb */}
           <nav style={{ marginBottom: 20, display: "flex", alignItems: "center", gap: 6 }}>
             <Link href="/" style={{ color: "rgba(255,255,255,0.5)", fontSize: 13, textDecoration: "none" }}>
               Home
@@ -153,7 +124,7 @@ export default function StackPageClient({ stack }: { stack: Stack }) {
           alignItems: "start",
         }}
       >
-        {/* Sticky TOC */}
+        {/* Sidebar */}
         <aside style={{ position: "sticky", top: 80 }}>
           <div
             style={{
@@ -175,15 +146,8 @@ export default function StackPageClient({ stack }: { stack: Stack }) {
             >
               On This Page
             </p>
-            {TOC_SECTIONS.map(({ id, label }) => (
-              <a
-                key={id}
-                href={`#${id}`}
-                className={`toc-link${activeSection === id ? " active" : ""}`}
-              >
-                {label}
-              </a>
-            ))}
+            {/* TocHighlighter handles the active state client-side */}
+            <TocHighlighter />
 
             <div
               style={{
@@ -217,7 +181,6 @@ export default function StackPageClient({ stack }: { stack: Stack }) {
               </a>
             </div>
           </div>
-
           <Link
             href="/"
             style={{
@@ -234,7 +197,7 @@ export default function StackPageClient({ stack }: { stack: Stack }) {
           </Link>
         </aside>
 
-        {/* Article content */}
+        {/* Article — fully server-rendered */}
         <article style={{ minWidth: 0 }}>
           {/* Overview */}
           <section id="overview" style={{ marginBottom: 56 }}>
@@ -299,7 +262,7 @@ export default function StackPageClient({ stack }: { stack: Stack }) {
               </div>
             </div>
             <p style={{ ...proseStyle, fontSize: 13, color: "#94a3b8" }}>
-              Prices based on annual billing as of {stack.lastUpdated}. Enterprise pricing may vary — always verify directly with vendors.
+              Prices based on annual billing as of {stack.lastUpdated}. Always verify directly with vendors.
             </p>
           </section>
 
@@ -310,8 +273,8 @@ export default function StackPageClient({ stack }: { stack: Stack }) {
               Here's every tool in this stack — what role it plays, why it earns its spot, and exactly what it costs.
             </p>
             <div style={{ display: "flex", flexDirection: "column", gap: 20 }}>
-              {stack.tools.map((tool, i) => (
-                <ToolCard key={tool.slug} tool={tool} index={i} />
+              {stack.tools.map((tool) => (
+                <ToolCard key={tool.slug} tool={tool} />
               ))}
             </div>
           </section>
@@ -355,14 +318,10 @@ export default function StackPageClient({ stack }: { stack: Stack }) {
             </div>
           </section>
 
-          {/* FAQ */}
+          {/* FAQ — client component for accordion, content still crawlable via JSON-LD */}
           <section id="faq" style={{ marginBottom: 56 }}>
             <h2 style={sectionHeadingStyle}>Frequently Asked Questions</h2>
-            <div style={{ display: "flex", flexDirection: "column", gap: 12 }}>
-              {stack.faqs.map((faq, i) => (
-                <FaqItem key={i} question={faq.question} answer={faq.answer} />
-              ))}
-            </div>
+            <FaqAccordion faqs={stack.faqs} />
           </section>
 
           {/* Bottom CTA */}
@@ -410,8 +369,8 @@ export default function StackPageClient({ stack }: { stack: Stack }) {
   );
 }
 
-// ─── ToolCard ─────────────────────────────────────────────────────────────────
-function ToolCard({ tool, index }: { tool: StackTool; index: number }) {
+// ─── ToolCard — server component ──────────────────────────────────────────────
+function ToolCard({ tool }: { tool: StackTool }) {
   const stars = Math.round(tool.rating);
 
   return (
@@ -490,7 +449,6 @@ function ToolCard({ tool, index }: { tool: StackTool; index: number }) {
         <p style={{ fontSize: 14, color: "#475569", lineHeight: 1.7, margin: "0 0 16px" }}>
           {tool.why}
         </p>
-
         <div style={{ marginBottom: 16 }}>
           <div
             style={{
@@ -521,7 +479,6 @@ function ToolCard({ tool, index }: { tool: StackTool; index: number }) {
             ))}
           </div>
         </div>
-
         <div style={{ display: "flex", gap: 10 }}>
           <a
             href={tool.toolsUrl}
@@ -558,67 +515,6 @@ function ToolCard({ tool, index }: { tool: StackTool; index: number }) {
           </a>
         </div>
       </div>
-    </div>
-  );
-}
-
-// ─── FaqItem ──────────────────────────────────────────────────────────────────
-function FaqItem({ question, answer }: { question: string; answer: string }) {
-  const [open, setOpen] = useState(false);
-
-  return (
-    <div
-      style={{
-        background: "#fff",
-        border: "1px solid #e2e8f0",
-        borderRadius: 10,
-        overflow: "hidden",
-      }}
-    >
-      <button
-        onClick={() => setOpen(!open)}
-        style={{
-          width: "100%",
-          background: "none",
-          border: "none",
-          cursor: "pointer",
-          padding: "16px 20px",
-          display: "flex",
-          alignItems: "center",
-          justifyContent: "space-between",
-          gap: 12,
-          textAlign: "left",
-        }}
-      >
-        <span style={{ fontWeight: 700, fontSize: 14, color: "#0f2340", lineHeight: 1.4 }}>
-          {question}
-        </span>
-        <span
-          style={{
-            color: "#1d6ce8",
-            fontSize: 20,
-            fontWeight: 300,
-            flexShrink: 0,
-            transform: open ? "rotate(45deg)" : "rotate(0deg)",
-            transition: "transform 0.15s ease",
-            lineHeight: 1,
-          }}
-        >
-          +
-        </span>
-      </button>
-      {open && (
-        <div
-          style={{
-            padding: "0 20px 16px",
-            borderTop: "1px solid #f1f5f9",
-          }}
-        >
-          <p style={{ fontSize: 14, color: "#475569", lineHeight: 1.65, margin: "14px 0 0" }}>
-            {answer}
-          </p>
-        </div>
-      )}
     </div>
   );
 }

@@ -11,9 +11,10 @@ export function generateStaticParams() {
 export async function generateMetadata({
   params,
 }: {
-  params: { slug: string };
+  params: Promise<{ slug: string }>;
 }): Promise<Metadata> {
-  const stack = getStack(params.slug);
+  const { slug } = await params;
+  const stack = getStack(slug);
   if (!stack) return {};
   return {
     title: stack.title,
@@ -27,8 +28,13 @@ export async function generateMetadata({
 }
 
 // ─── Page (server) ─────────────────────────────────────────────────────────────
-export default function StackPage({ params }: { params: { slug: string } }) {
-  const stack = getStack(params.slug);
+export default async function StackPage({
+  params,
+}: {
+  params: Promise<{ slug: string }>;
+}) {
+  const { slug } = await params;
+  const stack = getStack(slug);
   if (!stack) notFound();
 
   const jsonLd = {
