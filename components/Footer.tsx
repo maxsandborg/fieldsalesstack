@@ -1,0 +1,121 @@
+import Link from "next/link";
+
+export default function Footer() {
+  const currentYear = new Date().getFullYear();
+
+  return (
+    <footer style={{ background: "#0f2340", color: "#94a3b8", marginTop: 80 }}>
+      <div style={{ maxWidth: 1200, margin: "0 auto", padding: "48px 20px 32px" }}>
+        <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr 1fr", gap: 40, marginBottom: 48 }}>
+          {/* Brand */}
+          <div>
+            <div style={{ display: "flex", alignItems: "center", gap: 10, marginBottom: 12 }}>
+              <div
+                style={{
+                  width: 32,
+                  height: 32,
+                  background: "linear-gradient(135deg, #1d6ce8, #3b82f6)",
+                  borderRadius: 8,
+                  display: "flex",
+                  alignItems: "center",
+                  justifyContent: "center",
+                  fontSize: 16,
+                }}
+              >
+                🧱
+              </div>
+              <span style={{ color: "#fff", fontWeight: 800, fontSize: 16 }}>FieldSalesStack.com</span>
+            </div>
+            <p style={{ fontSize: 13, lineHeight: 1.6, margin: 0 }}>
+              Curated tech stacks for field sales teams. Find the right combination of tools for your industry and team size.
+            </p>
+          </div>
+
+          {/* Industry Stacks */}
+          <div>
+            <h4 style={{ color: "#fff", fontWeight: 700, fontSize: 13, marginBottom: 12, marginTop: 0, textTransform: "uppercase", letterSpacing: "0.06em" }}>
+              Industry Stacks
+            </h4>
+            <div style={{ display: "flex", flexDirection: "column", gap: 8 }}>
+              {[
+                { href: "/stacks/roofing", label: "Roofing" },
+                { href: "/stacks/solar", label: "Solar" },
+                { href: "/stacks/pest-control", label: "Pest Control" },
+                { href: "/stacks/hvac", label: "HVAC" },
+                { href: "/stacks/telecom-fiber", label: "Telecom & Fiber" },
+                { href: "/stacks/medical-devices", label: "Medical Devices" },
+                { href: "/stacks/distribution", label: "Distribution" },
+                { href: "/stacks/food-beverage", label: "Food & Beverage" },
+              ].map((link) => (
+                <Link
+                  key={link.href}
+                  href={link.href}
+                  style={{ color: "#94a3b8", textDecoration: "none", fontSize: 13 }}
+                >
+                  {link.label}
+                </Link>
+              ))}
+            </div>
+          </div>
+
+          {/* Team Size + Sister Site */}
+          <div>
+            <h4 style={{ color: "#fff", fontWeight: 700, fontSize: 13, marginBottom: 12, marginTop: 0, textTransform: "uppercase", letterSpacing: "0.06em" }}>
+              By Team Size
+            </h4>
+            <div style={{ display: "flex", flexDirection: "column", gap: 8, marginBottom: 24 }}>
+              {[
+                { href: "/stacks/solo-rep", label: "Solo Rep" },
+                { href: "/stacks/smb-team", label: "Small Team (2–20 reps)" },
+                { href: "/stacks/mid-market-team", label: "Mid-Market (20–100 reps)" },
+              ].map((link) => (
+                <Link
+                  key={link.href}
+                  href={link.href}
+                  style={{ color: "#94a3b8", textDecoration: "none", fontSize: 13 }}
+                >
+                  {link.label}
+                </Link>
+              ))}
+            </div>
+
+            <h4 style={{ color: "#fff", fontWeight: 700, fontSize: 13, marginBottom: 12, marginTop: 0, textTransform: "uppercase", letterSpacing: "0.06em" }}>
+              Related
+            </h4>
+            <a
+              href="https://www.fieldsalestools.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              style={{ color: "#1d6ce8", textDecoration: "none", fontSize: 13 }}
+            >
+              FieldSalesTools.com — Compare individual tools →
+            </a>
+          </div>
+        </div>
+
+        {/* Bottom bar */}
+        <div
+          style={{
+            borderTop: "1px solid rgba(255,255,255,0.08)",
+            paddingTop: 24,
+            display: "flex",
+            justifyContent: "space-between",
+            alignItems: "center",
+          }}
+        >
+          <p style={{ margin: 0, fontSize: 12 }}>
+            © {currentYear} FieldSalesStack.com. Independent research — not affiliated with any software vendor.
+          </p>
+          <div style={{ display: "flex", gap: 20 }}>
+            <Link href="/privacy" style={{ color: "#64748b", textDecoration: "none", fontSize: 12 }}>
+              Privacy
+            </Link>
+            <Link href="/disclaimer" style={{ color: "#64748b", textDecoration: "none", fontSize: 12 }}>
+              Disclaimer
+            </Link>
+          </div>
+        </div>
+      </div>
+    </footer>
+  );
+}
