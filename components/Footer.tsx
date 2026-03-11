@@ -6,7 +6,7 @@ export default function Footer() {
   return (
     <footer style={{ background: "#0f2340", color: "#94a3b8", marginTop: 80 }}>
       <div style={{ maxWidth: 1200, margin: "0 auto", padding: "48px 20px 32px" }}>
-        <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr 1fr", gap: 40, marginBottom: 48 }}>
+        <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr 1fr 1fr", gap: 40, marginBottom: 48 }}>
           {/* Brand */}
           <div>
             <div style={{ display: "flex", alignItems: "center", gap: 10, marginBottom: 12 }}>
@@ -26,9 +26,40 @@ export default function Footer() {
               </div>
               <span style={{ color: "#fff", fontWeight: 800, fontSize: 16 }}>FieldSalesStack.com</span>
             </div>
-            <p style={{ fontSize: 13, lineHeight: 1.6, margin: 0 }}>
-              Curated tech stacks for field sales teams. Find the right combination of tools for your industry and team size.
+            <p style={{ fontSize: 13, lineHeight: 1.6, margin: "0 0 12px" }}>
+              The #1 resource for field sales teams. Curated tool reviews, tech stack guides, and head-to-head comparisons.
             </p>
+            <p style={{ fontSize: 12, lineHeight: 1.5, margin: 0, color: "#64748b" }}>
+              FieldSalesStack.com is reader-supported. We may earn a commission when you buy tools we recommend.{" "}
+              <Link href="/disclaimer" style={{ color: "#1d6ce8", textDecoration: "none" }}>Learn more</Link>
+            </p>
+          </div>
+
+          {/* Tools */}
+          <div>
+            <h4 style={{ color: "#fff", fontWeight: 700, fontSize: 13, marginBottom: 12, marginTop: 0, textTransform: "uppercase", letterSpacing: "0.06em" }}>
+              Tools
+            </h4>
+            <div style={{ display: "flex", flexDirection: "column", gap: 8 }}>
+              {[
+                { href: "/tools", label: "All Tools" },
+                { href: "/tools/spotio", label: "SPOTIO" },
+                { href: "/tools/salesrabbit", label: "SalesRabbit" },
+                { href: "/tools/badger-maps", label: "Badger Maps" },
+                { href: "/tools/knockio", label: "Knockio" },
+                { href: "/compare", label: "Compare Tools" },
+                { href: "/alternatives/spotio-alternatives", label: "SPOTIO Alternatives" },
+                { href: "/alternatives/salesrabbit-alternatives", label: "SalesRabbit Alternatives" },
+              ].map((link) => (
+                <Link
+                  key={link.href}
+                  href={link.href}
+                  style={{ color: "#94a3b8", textDecoration: "none", fontSize: 13 }}
+                >
+                  {link.label}
+                </Link>
+              ))}
+            </div>
           </div>
 
           {/* Industry Stacks */}
@@ -44,8 +75,7 @@ export default function Footer() {
                 { href: "/stacks/hvac", label: "HVAC" },
                 { href: "/stacks/telecom-fiber", label: "Telecom & Fiber" },
                 { href: "/stacks/medical-devices", label: "Medical Devices" },
-                { href: "/stacks/distribution", label: "Distribution" },
-                { href: "/stacks/food-beverage", label: "Food & Beverage" },
+                { href: "/industries", label: "All Industries" },
               ].map((link) => (
                 <Link
                   key={link.href}
@@ -58,16 +88,18 @@ export default function Footer() {
             </div>
           </div>
 
-          {/* Team Size + Sister Site */}
+          {/* Company */}
           <div>
             <h4 style={{ color: "#fff", fontWeight: 700, fontSize: 13, marginBottom: 12, marginTop: 0, textTransform: "uppercase", letterSpacing: "0.06em" }}>
-              By Team Size
+              Company
             </h4>
             <div style={{ display: "flex", flexDirection: "column", gap: 8, marginBottom: 24 }}>
               {[
-                { href: "/stacks/solo-rep", label: "Solo Rep" },
-                { href: "/stacks/smb-team", label: "Small Team (2–20 reps)" },
-                { href: "/stacks/mid-market-team", label: "Mid-Market (20–100 reps)" },
+                { href: "/about", label: "About" },
+                { href: "/advertise", label: "Advertise" },
+                { href: "/submit", label: "Submit a Tool" },
+                { href: "/privacy", label: "Privacy Policy" },
+                { href: "/disclaimer", label: "Disclaimer" },
               ].map((link) => (
                 <Link
                   key={link.href}
@@ -80,16 +112,23 @@ export default function Footer() {
             </div>
 
             <h4 style={{ color: "#fff", fontWeight: 700, fontSize: 13, marginBottom: 12, marginTop: 0, textTransform: "uppercase", letterSpacing: "0.06em" }}>
-              Related
+              Team Size
             </h4>
-            <a
-              href="https://www.fieldsalestools.com"
-              target="_blank"
-              rel="noopener noreferrer"
-              style={{ color: "#1d6ce8", textDecoration: "none", fontSize: 13 }}
-            >
-              FieldSalesTools.com — Compare individual tools →
-            </a>
+            <div style={{ display: "flex", flexDirection: "column", gap: 8 }}>
+              {[
+                { href: "/stacks/solo-rep", label: "Solo Rep" },
+                { href: "/stacks/smb-team", label: "Small Team (2–20)" },
+                { href: "/stacks/mid-market-team", label: "Mid-Market (20–100)" },
+              ].map((link) => (
+                <Link
+                  key={link.href}
+                  href={link.href}
+                  style={{ color: "#94a3b8", textDecoration: "none", fontSize: 13 }}
+                >
+                  {link.label}
+                </Link>
+              ))}
+            </div>
           </div>
         </div>
 
@@ -112,6 +151,9 @@ export default function Footer() {
             </Link>
             <Link href="/disclaimer" style={{ color: "#64748b", textDecoration: "none", fontSize: 12 }}>
               Disclaimer
+            </Link>
+            <Link href="/advertise" style={{ color: "#64748b", textDecoration: "none", fontSize: 12 }}>
+              Advertise
             </Link>
           </div>
         </div>

@@ -49,7 +49,7 @@ export default function Header() {
         {/* Nav */}
         <nav style={{ display: "flex", alignItems: "center", gap: 4 }}>
           <Link
-            href="/#industry-stacks"
+            href="/tools"
             style={{
               color: "#94a3b8",
               textDecoration: "none",
@@ -57,14 +57,12 @@ export default function Header() {
               fontWeight: 500,
               padding: "6px 12px",
               borderRadius: 6,
-              transition: "all 0.15s",
             }}
-            className="nav-link"
           >
-            By Industry
+            Tools
           </Link>
           <Link
-            href="/#team-size-stacks"
+            href="/stacks"
             style={{
               color: "#94a3b8",
               textDecoration: "none",
@@ -74,12 +72,36 @@ export default function Header() {
               borderRadius: 6,
             }}
           >
-            By Team Size
+            Stacks
           </Link>
-          <a
-            href="https://www.fieldsalestools.com"
-            target="_blank"
-            rel="noopener noreferrer"
+          <Link
+            href="/compare"
+            style={{
+              color: "#94a3b8",
+              textDecoration: "none",
+              fontSize: 14,
+              fontWeight: 500,
+              padding: "6px 12px",
+              borderRadius: 6,
+            }}
+          >
+            Compare
+          </Link>
+          <Link
+            href="/industries"
+            style={{
+              color: "#94a3b8",
+              textDecoration: "none",
+              fontSize: 14,
+              fontWeight: 500,
+              padding: "6px 12px",
+              borderRadius: 6,
+            }}
+          >
+            Industries
+          </Link>
+          <Link
+            href="/tools"
             style={{
               background: "#1d6ce8",
               color: "#fff",
@@ -91,8 +113,8 @@ export default function Header() {
               marginLeft: 8,
             }}
           >
-            Compare Tools →
-          </a>
+            Browse Tools →
+          </Link>
         </nav>
       </div>
     </header>
