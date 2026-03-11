@@ -19,7 +19,7 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
   const tool = getToolBySlug(slug);
   if (!tool) return {};
   return {
-    title: `${tool.name} Review 2026 — Pricing, Features & Alternatives | FieldSalesStack.com`,
+    title: `${tool.name} Review 2026 — Pricing, Features & Alternatives | FieldSalesTools.com`,
     description: `Honest ${tool.name} review: features, pricing, pros and cons. Is ${tool.name} right for your field sales team? Compare with top alternatives.`,
   };
 }
@@ -134,7 +134,7 @@ export default async function ToolPage({ params }: { params: Promise<{ slug: str
         "@type": "SoftwareApplication",
         "name": tool.name,
         "description": tool.description,
-        "url": `https://www.fieldsalesstack.com/tools/${tool.slug}`,
+        "url": `https://www.fieldsalestools.com/tools/${tool.slug}`,
         "applicationCategory": "BusinessApplication",
         "operatingSystem": tool.platforms.join(", "),
         "dateModified": "2026-03-01",
@@ -168,7 +168,7 @@ export default async function ToolPage({ params }: { params: Promise<{ slug: str
             },
             "author": {
               "@type": "Organization",
-              "name": "FieldSalesStack.com Editorial Team"
+              "name": "FieldSalesTools.com Editorial Team"
             },
             "reviewBody": review.reviewBody[0],
             "datePublished": "2026-03-01"
@@ -193,19 +193,19 @@ export default async function ToolPage({ params }: { params: Promise<{ slug: str
             "@type": "ListItem",
             "position": 1,
             "name": "Home",
-            "item": "https://www.fieldsalesstack.com"
+            "item": "https://www.fieldsalestools.com"
           },
           {
             "@type": "ListItem",
             "position": 2,
             "name": "All Tools",
-            "item": "https://www.fieldsalesstack.com/tools"
+            "item": "https://www.fieldsalestools.com/tools"
           },
           {
             "@type": "ListItem",
             "position": 3,
             "name": tool.name,
-            "item": `https://www.fieldsalesstack.com/tools/${tool.slug}`
+            "item": `https://www.fieldsalestools.com/tools/${tool.slug}`
           }
         ]
       }
@@ -385,7 +385,7 @@ export default async function ToolPage({ params }: { params: Promise<{ slug: str
                     <div className="flex-1" style={{ borderLeft: "1px solid rgba(255,255,255,0.1)", paddingLeft: "1.5rem" }}>
                       <p className="text-xs font-semibold uppercase tracking-wider mb-1" style={{ color: "#6fa3c8" }}>Editor&apos;s Verdict</p>
                       <p className="text-white font-medium leading-relaxed">&ldquo;{review.editorVerdict}&rdquo;</p>
-                      <p className="text-xs mt-2" style={{ color: "#4a6a8a" }}>Last tested: {review.lastTested} · FieldSalesStack.com Editorial Team</p>
+                      <p className="text-xs mt-2" style={{ color: "#4a6a8a" }}>Last tested: {review.lastTested} · FieldSalesTools.com Editorial Team</p>
                     </div>
                   </div>
                 </section>

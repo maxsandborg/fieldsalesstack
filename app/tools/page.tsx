@@ -4,7 +4,7 @@ import Footer from "@/components/Footer";
 import { tools } from "@/data/tools";
 
 export const metadata = {
-  title: "Field Sales Tools — 20+ Reviewed & Compared (2026) | FieldSalesStack.com",
+  title: "Field Sales Tools — 20+ Reviewed & Compared (2026) | FieldSalesTools.com",
   description:
     "Independent reviews of every major field sales, D2D, and canvassing software tool. Compare pricing, features, and see which tools fit your team.",
 };
@@ -32,7 +32,7 @@ export default function ToolsPage() {
           <div style={{ maxWidth: 1200, margin: "0 auto" }}>
             <div style={{ marginBottom: 8 }}>
               <Link href="/" style={{ color: "#64748b", textDecoration: "none", fontSize: 13 }}>
-                FieldSalesStack.com
+                FieldSalesTools.com
               </Link>
               <span style={{ color: "#334155", margin: "0 8px" }}>/</span>
               <span style={{ color: "#94a3b8", fontSize: 13 }}>Tools</span>

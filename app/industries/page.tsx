@@ -4,7 +4,7 @@ import Link from "next/link";
 import { industries } from "@/data/industries";
 
 export const metadata = {
-  title: "Field Sales Software by Industry | FieldSalesStack.com",
+  title: "Field Sales Software by Industry | FieldSalesTools.com",
   description:
     "Find the best field sales and D2D software for your industry. Solar, roofing, telecom, pest control, HVAC, home services, and more.",
 };

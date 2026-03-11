@@ -1,5 +1,5 @@
 /**
- * Centralized affiliate URL configuration for FieldSalesStack.com
+ * Centralized affiliate URL configuration for FieldSalesTools.com
  *
  * How to add a new affiliate:
  *  1. Get your tracking link from the affiliate program (PartnerStack, ShareASale, direct, etc.)
@@ -41,17 +41,17 @@ export const affiliateUrls: Record<string, string> = {
 
   // SPOTIO — largest D2D platform, likely has program
   // Check: https://spotio.com/partners or email partnerships@spotio.com
-  // "spotio": "https://spotio.com/?ref=fieldsalesstack",
+  // "spotio": "https://spotio.com/?ref=fieldsalestools",
 
   // Knockio — $50/conversion reported
   // Check: https://knockio.com/affiliate or PartnerStack
-  // "knockio": "https://knockio.com/?ref=fieldsalesstack",
+  // "knockio": "https://knockio.com/?ref=fieldsalestools",
 
   // Badger Maps — popular route optimization, check impact.com
-  // "badger-maps": "https://www.badgermapping.com/?ref=fieldsalesstack",
+  // "badger-maps": "https://www.badgermapping.com/?ref=fieldsalestools",
 
   // Map My Customers — CRM, check PartnerStack
-  // "map-my-customers": "https://mapmycustomers.com/?ref=fieldsalesstack",
+  // "map-my-customers": "https://mapmycustomers.com/?ref=fieldsalestools",
 };
 
 /**

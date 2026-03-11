@@ -22,15 +22,15 @@ export default function Footer() {
                   fontSize: 16,
                 }}
               >
-                🧱
+                🛠️
               </div>
-              <span style={{ color: "#fff", fontWeight: 800, fontSize: 16 }}>FieldSalesStack.com</span>
+              <span style={{ color: "#fff", fontWeight: 800, fontSize: 16 }}>FieldSalesTools.com</span>
             </div>
             <p style={{ fontSize: 13, lineHeight: 1.6, margin: "0 0 12px" }}>
               The #1 resource for field sales teams. Curated tool reviews, tech stack guides, and head-to-head comparisons.
             </p>
             <p style={{ fontSize: 12, lineHeight: 1.5, margin: 0, color: "#64748b" }}>
-              FieldSalesStack.com is reader-supported. We may earn a commission when you buy tools we recommend.{" "}
+              FieldSalesTools.com is reader-supported. We may earn a commission when you buy tools we recommend.{" "}
               <Link href="/disclaimer" style={{ color: "#1d6ce8", textDecoration: "none" }}>Learn more</Link>
             </p>
           </div>
@@ -143,7 +143,7 @@ export default function Footer() {
           }}
         >
           <p style={{ margin: 0, fontSize: 12 }}>
-            © {currentYear} FieldSalesStack.com. Independent research — not affiliated with any software vendor.
+            © {currentYear} FieldSalesTools.com. Independent research — not affiliated with any software vendor.
           </p>
           <div style={{ display: "flex", gap: 20 }}>
             <Link href="/privacy" style={{ color: "#64748b", textDecoration: "none", fontSize: 12 }}>

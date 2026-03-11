@@ -18,7 +18,7 @@ export async function generateMetadata({
   const { slug } = await params;
   const page = getBestForPage(slug);
   if (!page) return {};
-  const url = `https://www.fieldsalesstack.com/best/${page.slug}`;
+  const url = `https://www.fieldsalestools.com/best/${page.slug}`;
   return {
     title: page.title,
     description: page.metaDescription,
@@ -28,13 +28,13 @@ export async function generateMetadata({
       description: page.metaDescription,
       type: "article",
       url,
-      siteName: "FieldSalesStack.com",
+      siteName: "FieldSalesTools.com",
       images: [
         {
-          url: "https://www.fieldsalesstack.com/og-image.png",
+          url: "https://www.fieldsalestools.com/og-image.png",
           width: 1200,
           height: 630,
-          alt: `${page.title} — FieldSalesStack.com`,
+          alt: `${page.title} — FieldSalesTools.com`,
         },
       ],
     },
@@ -42,7 +42,7 @@ export async function generateMetadata({
       card: "summary_large_image",
       title: page.title,
       description: page.metaDescription,
-      images: ["https://www.fieldsalesstack.com/og-image.png"],
+      images: ["https://www.fieldsalestools.com/og-image.png"],
     },
   };
 }
@@ -57,7 +57,7 @@ export default async function BestForPage({
   const page = getBestForPage(slug);
   if (!page) notFound();
 
-  const pageUrl = `https://www.fieldsalesstack.com/best/${page.slug}`;
+  const pageUrl = `https://www.fieldsalestools.com/best/${page.slug}`;
 
   // ─── JSON-LD ────────────────────────────────────────────────────────────────
   const jsonLd = {
@@ -72,13 +72,13 @@ export default async function BestForPage({
         dateModified: page.lastUpdated,
         author: {
           "@type": "Organization",
-          name: "FieldSalesStack.com Editorial Team",
-          url: "https://www.fieldsalesstack.com/about",
+          name: "FieldSalesTools.com Editorial Team",
+          url: "https://www.fieldsalestools.com/about",
         },
         publisher: {
           "@type": "Organization",
-          name: "FieldSalesStack.com",
-          url: "https://www.fieldsalesstack.com",
+          name: "FieldSalesTools.com",
+          url: "https://www.fieldsalestools.com",
         },
       },
       {
@@ -88,13 +88,13 @@ export default async function BestForPage({
             "@type": "ListItem",
             position: 1,
             name: "Home",
-            item: "https://www.fieldsalesstack.com",
+            item: "https://www.fieldsalestools.com",
           },
           {
             "@type": "ListItem",
             position: 2,
             name: "Best",
-            item: "https://www.fieldsalesstack.com/best",
+            item: "https://www.fieldsalestools.com/best",
           },
           {
             "@type": "ListItem",

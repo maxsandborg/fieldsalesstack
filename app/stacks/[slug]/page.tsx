@@ -16,7 +16,7 @@ export async function generateMetadata({
   const { slug } = await params;
   const stack = getStack(slug);
   if (!stack) return {};
-  const url = `https://www.fieldsalesstack.com/stacks/${stack.slug}`;
+  const url = `https://www.fieldsalestools.com/stacks/${stack.slug}`;
   return {
     title: stack.title,
     description: stack.metaDescription,
@@ -28,13 +28,13 @@ export async function generateMetadata({
       description: stack.metaDescription,
       type: "article",
       url,
-      siteName: "FieldSalesStack.com",
+      siteName: "FieldSalesTools.com",
       images: [
         {
-          url: "https://www.fieldsalesstack.com/og-image.png",
+          url: "https://www.fieldsalestools.com/og-image.png",
           width: 1200,
           height: 630,
-          alt: `${stack.title} — FieldSalesStack.com`,
+          alt: `${stack.title} — FieldSalesTools.com`,
         },
       ],
     },
@@ -42,7 +42,7 @@ export async function generateMetadata({
       card: "summary_large_image",
       title: stack.title,
       description: stack.metaDescription,
-      images: ["https://www.fieldsalesstack.com/og-image.png"],
+      images: ["https://www.fieldsalestools.com/og-image.png"],
     },
   };
 }
@@ -57,7 +57,7 @@ export default async function StackPage({
   const stack = getStack(slug);
   if (!stack) notFound();
 
-  const pageUrl = `https://www.fieldsalesstack.com/stacks/${stack.slug}`;
+  const pageUrl = `https://www.fieldsalestools.com/stacks/${stack.slug}`;
 
   const jsonLd = {
     "@context": "https://schema.org",
@@ -70,12 +70,12 @@ export default async function StackPage({
         description: stack.metaDescription,
         datePublished: stack.lastUpdated,
         dateModified: stack.lastUpdated,
-        image: "https://www.fieldsalesstack.com/og-image.png",
-        author: { "@type": "Organization", name: "FieldSalesStack.com", url: "https://www.fieldsalesstack.com" },
+        image: "https://www.fieldsalestools.com/og-image.png",
+        author: { "@type": "Organization", name: "FieldSalesTools.com", url: "https://www.fieldsalestools.com" },
         publisher: {
           "@type": "Organization",
-          name: "FieldSalesStack.com",
-          url: "https://www.fieldsalesstack.com",
+          name: "FieldSalesTools.com",
+          url: "https://www.fieldsalestools.com",
         },
         mainEntityOfPage: { "@type": "WebPage", "@id": pageUrl },
       },
@@ -86,7 +86,7 @@ export default async function StackPage({
             "@type": "ListItem",
             position: 1,
             name: "Home",
-            item: "https://www.fieldsalesstack.com",
+            item: "https://www.fieldsalestools.com",
           },
           {
             "@type": "ListItem",

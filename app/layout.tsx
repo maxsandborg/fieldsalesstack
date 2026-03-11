@@ -4,10 +4,10 @@ import Header from "../components/Header";
 import Footer from "../components/Footer";
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://www.fieldsalesstack.com"),
+  metadataBase: new URL("https://www.fieldsalestools.com"),
   title: {
-    default: "FieldSalesStack — Curated Tech Stacks for Field Sales Teams",
-    template: "%s | FieldSalesStack.com",
+    default: "FieldSalesTools — Curated Tech Stacks for Field Sales Teams",
+    template: "%s | FieldSalesTools.com",
   },
   description:
     "Discover the best software stack for your field sales team. Curated tool combinations by industry and team size — with real pricing and honest reviews.",
@@ -24,25 +24,25 @@ export const metadata: Metadata = {
   ],
   openGraph: {
     type: "website",
-    siteName: "FieldSalesStack.com",
-    title: "FieldSalesStack — Curated Tech Stacks for Field Sales Teams",
+    siteName: "FieldSalesTools.com",
+    title: "FieldSalesTools — Curated Tech Stacks for Field Sales Teams",
     description:
       "Discover the best software stack for your field sales team. Curated tool combinations by industry and team size — with real pricing and honest reviews.",
     images: [
       {
-        url: "https://www.fieldsalesstack.com/og-image.png",
+        url: "https://www.fieldsalestools.com/og-image.png",
         width: 1200,
         height: 630,
-        alt: "FieldSalesStack.com — Curated Tech Stacks for Field Sales Teams",
+        alt: "FieldSalesTools.com — Curated Tech Stacks for Field Sales Teams",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "FieldSalesStack — Curated Tech Stacks for Field Sales Teams",
+    title: "FieldSalesTools — Curated Tech Stacks for Field Sales Teams",
     description:
       "Discover the best software stack for your field sales team. Curated tool combinations by industry and team size.",
-    images: ["https://www.fieldsalesstack.com/og-image.png"],
+    images: ["https://www.fieldsalestools.com/og-image.png"],
   },
   robots: {
     index: true,
@@ -60,8 +60,8 @@ export const metadata: Metadata = {
 const jsonLd = {
   "@context": "https://schema.org",
   "@type": "Organization",
-  name: "FieldSalesStack.com",
-  url: "https://www.fieldsalesstack.com",
+  name: "FieldSalesTools.com",
+  url: "https://www.fieldsalestools.com",
   description:
     "Curated tech stacks for field sales teams by industry and team size.",
   sameAs: ["https://www.fieldsalestools.com"],

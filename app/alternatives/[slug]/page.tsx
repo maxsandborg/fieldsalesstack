@@ -16,7 +16,7 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
   const tool = getToolBySlug(slug);
   if (!tool) return { title: "Alternatives Not Found" };
   return {
-    title: `Best ${tool.name} Alternatives (2026) — Honest Comparison | FieldSalesStack.com`,
+    title: `Best ${tool.name} Alternatives (2026) — Honest Comparison | FieldSalesTools.com`,
     description: `Looking for ${tool.name} alternatives? We compared the top options on pricing, features, and real user ratings. Find the best replacement for your field sales team.`,
   };
 }
@@ -169,14 +169,14 @@ export default async function AlternativesPage({ params }: { params: Promise<{ s
       {
         "@type": "ItemList",
         "name": `Best ${tool.name} Alternatives 2026`,
-        "description": `The top alternatives to ${tool.name} for field sales teams, ranked and reviewed by FieldSalesStack.com.`,
-        "url": `https://www.fieldsalesstack.com/alternatives/${slug}`,
+        "description": `The top alternatives to ${tool.name} for field sales teams, ranked and reviewed by FieldSalesTools.com.`,
+        "url": `https://www.fieldsalestools.com/alternatives/${slug}`,
         "numberOfItems": alternatives.length,
         "itemListElement": alternatives.map((alt, i) => ({
           "@type": "ListItem",
           "position": i + 1,
           "name": alt.name,
-          "url": `https://www.fieldsalesstack.com/tools/${alt.slug}`,
+          "url": `https://www.fieldsalestools.com/tools/${alt.slug}`,
           "item": {
             "@type": "SoftwareApplication",
             "name": alt.name,
@@ -195,9 +195,9 @@ export default async function AlternativesPage({ params }: { params: Promise<{ s
       {
         "@type": "BreadcrumbList",
         "itemListElement": [
-          { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.fieldsalesstack.com" },
-          { "@type": "ListItem", "position": 2, "name": tool.name, "item": `https://www.fieldsalesstack.com/tools/${slug}` },
-          { "@type": "ListItem", "position": 3, "name": `${tool.name} Alternatives`, "item": `https://www.fieldsalesstack.com/alternatives/${slug}` }
+          { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.fieldsalestools.com" },
+          { "@type": "ListItem", "position": 2, "name": tool.name, "item": `https://www.fieldsalestools.com/tools/${slug}` },
+          { "@type": "ListItem", "position": 3, "name": `${tool.name} Alternatives`, "item": `https://www.fieldsalestools.com/alternatives/${slug}` }
         ]
       }
     ]
@@ -235,7 +235,7 @@ export default async function AlternativesPage({ params }: { params: Promise<{ s
               Updated March 2026
             </span>
             <span className="text-sm px-3 py-1 rounded-full font-medium text-white" style={{ backgroundColor: "rgba(255,255,255,0.12)" }}>
-              FieldSalesStack.com Editorial Team
+              FieldSalesTools.com Editorial Team
             </span>
           </div>
         </div>

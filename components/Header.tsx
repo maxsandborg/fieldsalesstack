@@ -36,11 +36,11 @@ export default function Header() {
               fontSize: 16,
             }}
           >
-            🧱
+            🛠️
           </div>
           <div>
             <span style={{ color: "#fff", fontWeight: 800, fontSize: 16, letterSpacing: "-0.3px" }}>
-              FieldSalesStack
+              FieldSalesTools
             </span>
             <span style={{ color: "#64748b", fontSize: 12, marginLeft: 4 }}>.com</span>
           </div>

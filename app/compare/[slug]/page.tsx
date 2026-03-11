@@ -27,7 +27,7 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
   const c = getComparison(slug) ?? getComparison(
     (() => { const p = parseSlugs(slug); return p ? `${p[1]}-vs-${p[0]}` : ""; })()
   );
-  if (c) return { title: c.title + " | FieldSalesStack.com", description: c.metaDescription };
+  if (c) return { title: c.title + " | FieldSalesTools.com", description: c.metaDescription };
 
   const parsed = parseSlugs(slug);
   if (!parsed) return { title: "Comparison Not Found" };
@@ -36,7 +36,7 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
   const t2 = getToolBySlug(s2);
   if (!t1 || !t2) return { title: "Comparison Not Found" };
   return {
-    title: `${t1.name} vs ${t2.name} (${new Date().getFullYear()}) | FieldSalesStack.com`,
+    title: `${t1.name} vs ${t2.name} (${new Date().getFullYear()}) | FieldSalesTools.com`,
     description: `${t1.name} vs ${t2.name} — compare pricing, features, ratings, and use cases for field sales teams.`,
   };
 }
@@ -99,13 +99,13 @@ export default async function ComparisonPage({ params }: { params: Promise<{ slu
         "@type": "WebPage",
         "name": title,
         "description": metaDesc,
-        "url": `https://www.fieldsalesstack.com/compare/${slug}`,
+        "url": `https://www.fieldsalestools.com/compare/${slug}`,
         "dateModified": "2026-03-01",
         "about": [
           {
             "@type": "SoftwareApplication",
             "name": tool1Name,
-            "url": `https://www.fieldsalesstack.com/tools/${slug1}`,
+            "url": `https://www.fieldsalestools.com/tools/${slug1}`,
             "applicationCategory": "BusinessApplication",
             "aggregateRating": {
               "@type": "AggregateRating",
@@ -118,7 +118,7 @@ export default async function ComparisonPage({ params }: { params: Promise<{ slu
           {
             "@type": "SoftwareApplication",
             "name": tool2Name,
-            "url": `https://www.fieldsalesstack.com/tools/${slug2}`,
+            "url": `https://www.fieldsalestools.com/tools/${slug2}`,
             "applicationCategory": "BusinessApplication",
             "aggregateRating": {
               "@type": "AggregateRating",
@@ -133,9 +133,9 @@ export default async function ComparisonPage({ params }: { params: Promise<{ slu
       {
         "@type": "BreadcrumbList",
         "itemListElement": [
-          { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.fieldsalesstack.com" },
-          { "@type": "ListItem", "position": 2, "name": "Compare", "item": "https://www.fieldsalesstack.com/compare" },
-          { "@type": "ListItem", "position": 3, "name": `${tool1Name} vs ${tool2Name}`, "item": `https://www.fieldsalesstack.com/compare/${slug}` }
+          { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.fieldsalestools.com" },
+          { "@type": "ListItem", "position": 2, "name": "Compare", "item": "https://www.fieldsalestools.com/compare" },
+          { "@type": "ListItem", "position": 3, "name": `${tool1Name} vs ${tool2Name}`, "item": `https://www.fieldsalestools.com/compare/${slug}` }
         ]
       }
     ]

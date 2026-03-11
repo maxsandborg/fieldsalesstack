@@ -7,6 +7,6 @@ export default function robots(): MetadataRoute.Robots {
       allow: "/",
       disallow: ["/privacy", "/disclaimer"],
     },
-    sitemap: "https://www.fieldsalesstack.com/sitemap.xml",
+    sitemap: "https://www.fieldsalestools.com/sitemap.xml",
   };
 }

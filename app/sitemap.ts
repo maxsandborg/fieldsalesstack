@@ -7,7 +7,7 @@ import { reviewedSlugs } from "../data/reviews";
 import { getAllBestForSlugs } from "../data/best-for";
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const baseUrl = "https://www.fieldsalesstack.com";
+  const baseUrl = "https://www.fieldsalestools.com";
   const now = new Date();
 
   // ── Static pages ────────────────────────────────────────────────────────────

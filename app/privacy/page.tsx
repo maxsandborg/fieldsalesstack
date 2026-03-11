@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 
 export const metadata: Metadata = {
   title: "Privacy Policy",
-  description: "Privacy policy for FieldSalesStack.com.",
+  description: "Privacy policy for FieldSalesTools.com.",
   robots: { index: false, follow: false },
 };
 
@@ -27,7 +27,7 @@ export default function PrivacyPage() {
       {[
         {
           title: "What we collect",
-          body: "FieldSalesStack.com does not collect personally identifiable information. We use standard web analytics (page views, referrers) to understand how visitors use the site. No account creation is required and no forms are used to collect your data.",
+          body: "FieldSalesTools.com does not collect personally identifiable information. We use standard web analytics (page views, referrers) to understand how visitors use the site. No account creation is required and no forms are used to collect your data.",
         },
         {
           title: "Cookies",

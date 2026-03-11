@@ -4,9 +4,9 @@ import Footer from "@/components/Footer";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "About FieldSalesStack.com | Built by a Field Sales Manager Who Lived It",
+  title: "About FieldSalesTools.com | Built by a Field Sales Manager Who Lived It",
   description:
-    "FieldSalesStack.com was built by Max Sandborg — a field sales manager who led D2D fiber sales teams across the US. Real-world tool reviews from someone who's actually managed reps in the field.",
+    "FieldSalesTools.com was built by Max Sandborg — a field sales manager who led D2D fiber sales teams across the US. Real-world tool reviews from someone who's actually managed reps in the field.",
 };
 
 export default function AboutPage() {
@@ -34,7 +34,7 @@ export default function AboutPage() {
             </span>
           </div>
           <h1 className="text-3xl md:text-4xl font-black text-white mb-4">
-            About FieldSalesStack.com
+            About FieldSalesTools.com
           </h1>
           <p className="text-base md:text-lg max-w-2xl mx-auto" style={{ color: "#94b8d4" }}>
             Not another generic software review site. This one was built by someone who&apos;s
@@ -125,7 +125,7 @@ export default function AboutPage() {
             reflect how tools actually perform when your reps are knocking 80 doors a day.
           </p>
           <p className="text-sm leading-relaxed" style={{ color: "#374151" }}>
-            That&apos;s FieldSalesStack.com. I continue to update every listing based on what I see
+            That&apos;s FieldSalesTools.com. I continue to update every listing based on what I see
             in the field — currently as Head of Sales at Zellyfi LLC, still running D2D fiber
             operations in the Tampa Bay area and beyond.
           </p>
@@ -373,7 +373,7 @@ export default function AboutPage() {
           </p>
           <div className="flex flex-col sm:flex-row gap-3 justify-center">
             <a
-              href="mailto:hello@fieldsalesstack.com"
+              href="mailto:hello@fieldsalestools.com"
               className="inline-block text-sm font-bold px-6 py-3 rounded-xl no-underline text-white"
               style={{ backgroundColor: "#1d6ce8" }}
             >

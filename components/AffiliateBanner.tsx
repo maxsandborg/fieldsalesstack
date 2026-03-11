@@ -15,7 +15,7 @@ export default function AffiliateBanner({ variant = "compact" }: AffiliateBanner
     return (
       <p style={{ color: "#64748b", fontSize: 12, margin: "0 0 8px", lineHeight: 1.5 }}>
         <strong style={{ color: "#475569" }}>Disclosure:</strong>{" "}
-        FieldSalesStack.com earns a commission if you buy tools through our links — at no extra cost to you.{" "}
+        FieldSalesTools.com earns a commission if you buy tools through our links — at no extra cost to you.{" "}
         <a href="/disclaimer" style={{ color: "#1d6ce8", textDecoration: "none" }}>
           Learn more →
         </a>
@@ -39,7 +39,7 @@ export default function AffiliateBanner({ variant = "compact" }: AffiliateBanner
       <span style={{ fontSize: 14, flexShrink: 0, marginTop: 1 }}>ℹ️</span>
       <p style={{ margin: 0, fontSize: 12, color: "#713f12", lineHeight: 1.6 }}>
         <strong>Affiliate disclosure:</strong> Some links on this page are affiliate links. If you click
-        through and purchase a product, FieldSalesStack.com may earn a commission — at no extra cost to
+        through and purchase a product, FieldSalesTools.com may earn a commission — at no extra cost to
         you. Our editorial ratings and reviews are{" "}
         <strong>independent of any commercial relationships.</strong>{" "}
         <a href="/disclaimer" style={{ color: "#92400e", textDecoration: "underline" }}>

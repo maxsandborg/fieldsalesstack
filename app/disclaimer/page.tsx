@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 
 export const metadata: Metadata = {
   title: "Disclaimer",
-  description: "Editorial disclaimer for FieldSalesStack.com.",
+  description: "Editorial disclaimer for FieldSalesTools.com.",
   robots: { index: false, follow: false },
 };
 
@@ -27,7 +27,7 @@ export default function DisclaimerPage() {
       {[
         {
           title: "Independence",
-          body: "FieldSalesStack.com is an independent research site. We are not affiliated with, sponsored by, or endorsed by any of the software vendors mentioned on this site. Our stack recommendations are based on our own research and analysis of publicly available information.",
+          body: "FieldSalesTools.com is an independent research site. We are not affiliated with, sponsored by, or endorsed by any of the software vendors mentioned on this site. Our stack recommendations are based on our own research and analysis of publicly available information.",
         },
         {
           title: "Accuracy",
