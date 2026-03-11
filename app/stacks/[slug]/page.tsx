@@ -16,13 +16,33 @@ export async function generateMetadata({
   const { slug } = await params;
   const stack = getStack(slug);
   if (!stack) return {};
+  const url = `https://www.fieldsalesstack.com/stacks/${stack.slug}`;
   return {
     title: stack.title,
     description: stack.metaDescription,
+    alternates: {
+      canonical: url,
+    },
     openGraph: {
       title: stack.headline,
       description: stack.metaDescription,
       type: "article",
+      url,
+      siteName: "FieldSalesStack.com",
+      images: [
+        {
+          url: "https://www.fieldsalesstack.com/og-image.png",
+          width: 1200,
+          height: 630,
+          alt: `${stack.title} — FieldSalesStack.com`,
+        },
+      ],
+    },
+    twitter: {
+      card: "summary_large_image",
+      title: stack.title,
+      description: stack.metaDescription,
+      images: ["https://www.fieldsalesstack.com/og-image.png"],
     },
   };
 }
@@ -37,20 +57,27 @@ export default async function StackPage({
   const stack = getStack(slug);
   if (!stack) notFound();
 
+  const pageUrl = `https://www.fieldsalesstack.com/stacks/${stack.slug}`;
+
   const jsonLd = {
     "@context": "https://schema.org",
     "@graph": [
       {
         "@type": "Article",
+        "@id": `${pageUrl}#article`,
+        url: pageUrl,
         headline: stack.headline,
         description: stack.metaDescription,
+        datePublished: stack.lastUpdated,
         dateModified: stack.lastUpdated,
-        author: { "@type": "Organization", name: "FieldSalesStack.com" },
+        image: "https://www.fieldsalesstack.com/og-image.png",
+        author: { "@type": "Organization", name: "FieldSalesStack.com", url: "https://www.fieldsalesstack.com" },
         publisher: {
           "@type": "Organization",
           name: "FieldSalesStack.com",
           url: "https://www.fieldsalesstack.com",
         },
+        mainEntityOfPage: { "@type": "WebPage", "@id": pageUrl },
       },
       {
         "@type": "BreadcrumbList",
@@ -65,7 +92,7 @@ export default async function StackPage({
             "@type": "ListItem",
             position: 2,
             name: stack.title,
-            item: `https://www.fieldsalesstack.com/stacks/${stack.slug}`,
+            item: pageUrl,
           },
         ],
       },

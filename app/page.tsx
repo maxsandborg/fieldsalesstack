@@ -3,9 +3,35 @@ import Link from "next/link";
 import { stacks } from "../data/stacks";
 
 export const metadata: Metadata = {
-  title: "Curated Tech Stacks for Field Sales Teams",
+  title: "Field Sales Tech Stacks by Industry & Team Size (2026)",
   description:
     "Find the best software combination for your field sales team. Curated tech stacks by industry and team size — with real pricing, honest reviews, and total cost per rep.",
+  alternates: {
+    canonical: "https://www.fieldsalesstack.com",
+  },
+  openGraph: {
+    title: "Field Sales Tech Stacks by Industry & Team Size (2026)",
+    description:
+      "Curated tech stacks for roofing, solar, HVAC, telecom, and more. Find the right tool combination for your field sales team.",
+    type: "website",
+    url: "https://www.fieldsalesstack.com",
+    siteName: "FieldSalesStack.com",
+    images: [
+      {
+        url: "https://www.fieldsalesstack.com/og-image.png",
+        width: 1200,
+        height: 630,
+        alt: "FieldSalesStack.com — Curated Tech Stacks for Field Sales Teams",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Field Sales Tech Stacks by Industry & Team Size (2026)",
+    description:
+      "Curated tech stacks for roofing, solar, HVAC, telecom, and more.",
+    images: ["https://www.fieldsalesstack.com/og-image.png"],
+  },
 };
 
 export default function HomePage() {

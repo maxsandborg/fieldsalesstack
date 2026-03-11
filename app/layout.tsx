@@ -18,6 +18,9 @@ export const metadata: Metadata = {
     "field sales CRM",
     "canvassing software",
     "field sales apps",
+    "roofing sales tools",
+    "solar sales tools",
+    "D2D sales software",
   ],
   openGraph: {
     type: "website",
@@ -25,12 +28,21 @@ export const metadata: Metadata = {
     title: "FieldSalesStack — Curated Tech Stacks for Field Sales Teams",
     description:
       "Discover the best software stack for your field sales team. Curated tool combinations by industry and team size — with real pricing and honest reviews.",
+    images: [
+      {
+        url: "https://www.fieldsalesstack.com/og-image.png",
+        width: 1200,
+        height: 630,
+        alt: "FieldSalesStack.com — Curated Tech Stacks for Field Sales Teams",
+      },
+    ],
   },
   twitter: {
     card: "summary_large_image",
     title: "FieldSalesStack — Curated Tech Stacks for Field Sales Teams",
     description:
       "Discover the best software stack for your field sales team. Curated tool combinations by industry and team size.",
+    images: ["https://www.fieldsalesstack.com/og-image.png"],
   },
   robots: {
     index: true,

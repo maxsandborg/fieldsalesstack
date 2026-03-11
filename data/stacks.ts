@@ -146,7 +146,7 @@ export const stacks: Stack[] = [
           "SalesRabbit handles the door-knock-to-inspection workflow: territory mapping, canvassing tracking, lead management, and rep performance. JobNimbus handles the inspection-to-completed-job workflow: estimates, proposals, insurance claims, job scheduling, and invoicing. They solve different problems and are often used together.",
       },
     ],
-    lastUpdated: "March 2026",
+    lastUpdated: "2026-03-01",
   },
 
   {
@@ -252,7 +252,7 @@ export const stacks: Stack[] = [
           "Yes — SalesRabbit's DataGrid AI scores residential households by solar purchase propensity using utility data, home characteristics, and demographic signals. Reps see which homes on a street are high-propensity before they knock, which concentrates effort on the highest-converting doors.",
       },
     ],
-    lastUpdated: "March 2026",
+    lastUpdated: "2026-03-01",
   },
 
   {
@@ -332,7 +332,7 @@ export const stacks: Stack[] = [
           "Yes — pest control is one of SalesRabbit's primary verticals alongside solar and roofing. Its territory heat maps, digital contract signing, and rep performance leaderboards match the pest control sales model well. The free Lite tier is a good starting point for small teams.",
       },
     ],
-    lastUpdated: "March 2026",
+    lastUpdated: "2026-03-01",
   },
 
   {
@@ -412,7 +412,7 @@ export const stacks: Stack[] = [
           "Both — but they serve different functions. Field sales software (SalesRabbit, Badger Maps) handles new customer acquisition and account management. Field service software (ServiceTitan, Jobber, Housecall Pro) handles dispatching, job management, and invoicing after the sale. Most professional HVAC companies run both.",
       },
     ],
-    lastUpdated: "March 2026",
+    lastUpdated: "2026-03-01",
   },
 
   {
@@ -493,7 +493,7 @@ export const stacks: Stack[] = [
           "Most professional fiber sales teams use dedicated D2D platforms like SPOTIO or SalesRabbit that track every door knock by address — recording when it was knocked, by whom, what the result was, and when follow-up is needed. This address-level data integrates with serviceability maps to ensure reps only spend time on serviceable addresses.",
       },
     ],
-    lastUpdated: "March 2026",
+    lastUpdated: "2026-03-01",
   },
 
   {
@@ -574,7 +574,7 @@ export const stacks: Stack[] = [
           "Badger Maps is consistently rated the best route optimization tool for medical device field reps, with 100,000+ users and a 4.7/5 G2 rating. Its Lasso tool, deep CRM integrations, and 9.4/10 support score make it the category standard. Map My Customers is a strong alternative for teams that prioritize pipeline visibility over pure routing.",
       },
     ],
-    lastUpdated: "March 2026",
+    lastUpdated: "2026-03-01",
   },
 
   {
@@ -676,7 +676,7 @@ export const stacks: Stack[] = [
           "Repsly is purpose-built for distribution order capture with product catalogs, customer-specific pricing, and real-time inventory sync. For teams that need both order capture and route planning, Repsly pairs well with Badger Maps. RepMove is a lower-cost alternative that covers both functions adequately for smaller teams.",
       },
     ],
-    lastUpdated: "March 2026",
+    lastUpdated: "2026-03-01",
   },
 
   {
@@ -778,7 +778,7 @@ export const stacks: Stack[] = [
           "Repsly is purpose-built for CPG and F&B retail execution — shelf audits, order capture, promotional compliance, and distributor tracking. For CPG brands that need both retail execution and route optimization, Repsly plus Badger Maps is the combination used by most mid-market and enterprise CPG field teams.",
       },
     ],
-    lastUpdated: "March 2026",
+    lastUpdated: "2026-03-01",
   },
 
   // ─── TEAM SIZE STACKS ──────────────────────────────────────────────────────
@@ -861,7 +861,7 @@ export const stacks: Stack[] = [
           "Yes — SalesRabbit's free Lite plan is the best free field sales tool available. It includes territory mapping, lead tracking, and a mobile canvassing workflow at no cost. It's limited compared to the paid plans, but covers the essentials for solo reps doing D2D or outside sales.",
       },
     ],
-    lastUpdated: "March 2026",
+    lastUpdated: "2026-03-01",
   },
 
   {
@@ -942,7 +942,7 @@ export const stacks: Stack[] = [
           "Yes, if reps are doing in-person visits. A spreadsheet or generic CRM like HubSpot lacks the mobile-first design, route optimization, and territory management that field reps need. The best field sales tools for small teams cost $20–39/user/mo — a small investment relative to the route efficiency and lead tracking improvements they deliver.",
       },
     ],
-    lastUpdated: "March 2026",
+    lastUpdated: "2026-03-01",
   },
 
   {
@@ -1023,7 +1023,7 @@ export const stacks: Stack[] = [
           "The most important analytics at 50+ reps are territory coverage rates (what percentage of target addresses have been contacted), rep performance by territory (identifying outliers and replicating top performers), and pipeline velocity by geography (where are deals moving faster or slower). SPOTIO's analytics dashboard covers all three.",
       },
     ],
-    lastUpdated: "March 2026",
+    lastUpdated: "2026-03-01",
   },
 ];
 
