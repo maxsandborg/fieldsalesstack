@@ -465,6 +465,459 @@ export const comparisons: ComparisonData[] = [
     winnerReason:
       "For most teams comparing these two, Outfield wins: lower cost, no minimum, flexible contracts, and stronger gamification. SPOTIO wins for enterprise D2D teams where its analytics depth (9.7/10 territory visualization) and enterprise integrations are worth the commitment. Fewer than 10 reps or not doing high-volume canvassing? Outfield is the rational choice.",
   },
+
+  // ─── NEW COMPARISONS (Dag 4) ─────────────────────────────────────────────────
+
+  {
+    slug: "salesrabbit-vs-knockio",
+    title: "SalesRabbit vs Knockio (2026)",
+    metaDescription:
+      "SalesRabbit vs Knockio — honest comparison of pricing, features, and use cases for D2D teams. Which canvassing platform is right for your team in 2026?",
+    tool1: "salesrabbit",
+    tool2: "knockio",
+    verdict:
+      "For established D2D teams of 5+ reps that want a full platform — CRM, training, gamification, and territory management — SalesRabbit is the clear choice. Knockio is the right pick for small or budget-conscious teams that just need clean, reliable canvassing software without the overhead.",
+    bestFor1:
+      "Growing D2D teams (5–200+ reps) in roofing, solar, pest control, and home security that need a complete field sales platform with training modules, territory management, and deep CRM capabilities.",
+    bestFor2:
+      "Small D2D teams or solo canvassers who want straightforward door-tracking, lead capture, and route planning at an affordable price without paying for features they won't use.",
+    summary:
+      "SalesRabbit and Knockio both serve D2D sales teams, but they operate at different levels of sophistication and price points.\n\nSalesRabbit is the market leader in D2D sales platforms. With 528+ G2 reviews, $5M ARR, and a January 2026 acquisition of Roofle (adding e-commerce pricing and digital proposals for roofing), it's a full-stack solution that handles territory assignment, rep training, gamification, and CRM in a single mobile-first platform. The free Lite tier makes it easy to evaluate, but the real value is in the Team and higher plans that unlock DataGrid AI, leaderboards, and advanced routing.\n\nKnockio is the lean alternative. Positioned explicitly as 'simple, powerful canvassing software,' it focuses on what D2D reps actually do every day: pin addresses, log dispositions, assign territories, and follow up on leads. It has earned a 4.4/5 rating across 97 reviews — strong for a newer, more focused tool. The affordable pricing (contact for quote, but consistently reported as lower than SalesRabbit) makes it attractive for budget-sensitive teams.\n\nThe core difference: SalesRabbit wants to be your entire field sales operating system. Knockio wants to be excellent at the canvassing layer and get out of your way. Neither is wrong — they just serve different buyers.",
+    differences: [
+      { label: "Starting Price", tool1: "$39/user/mo (Team) or free Lite", tool2: "Affordable — contact for pricing" },
+      { label: "Free Option", tool1: "Free Lite plan (1 user, limited)", tool2: "Free trial available" },
+      { label: "G2 Rating", tool1: "4.3/5 — 528 reviews", tool2: "4.4/5 — 97 reviews" },
+      { label: "Platform Scope", tool1: "Full D2D platform — CRM, training, gamification", tool2: "Focused canvassing & lead tracking" },
+      { label: "AI Features", tool1: "DataGrid AI for lead prioritization", tool2: "Basic automation" },
+      { label: "Training Tools", tool1: "Video training library + in-app coaching", tool2: "Not a focus" },
+      { label: "Roofing Stack", tool1: "Roofle acquisition — e-commerce pricing", tool2: "General D2D, not vertical-specific" },
+      { label: "Best For", tool1: "Teams wanting all-in-one solution", tool2: "Teams wanting simple, affordable canvassing" },
+      { label: "Annual Revenue", tool1: "$5M (2024)", tool2: "Early stage" },
+    ],
+    winnerOverall: "tool1",
+    winnerReason:
+      "SalesRabbit wins on depth, ecosystem, and long-term ROI. The Roofle acquisition, DataGrid AI, and 528-review track record put it in a different league for teams investing in field sales. Knockio wins on simplicity and cost for teams that don't need the full platform.",
+  },
+
+  {
+    slug: "salesrabbit-vs-d2d-crm",
+    title: "SalesRabbit vs D2D CRM (2026)",
+    metaDescription:
+      "SalesRabbit vs D2D CRM — which dedicated D2D platform should your team choose? Compare features, pricing, integrations, and real user reviews.",
+    tool1: "salesrabbit",
+    tool2: "d2d-crm",
+    verdict:
+      "Both tools were built exclusively for D2D sales — which already puts them ahead of generic CRMs. SalesRabbit wins on polish, ecosystem, and market traction. D2D CRM wins on pure D2D specialization and potentially lower cost for teams that don't need SalesRabbit's training or gamification modules.",
+    bestFor1:
+      "D2D teams of all sizes that want the most widely adopted platform in the industry — with the largest user community, most integrations, and proven ROI across roofing, solar, and pest control.",
+    bestFor2:
+      "Pure-play D2D canvassing teams that want a CRM built entirely around door-to-door workflows without any features borrowed from non-D2D sales motions.",
+    summary:
+      "When you're comparing SalesRabbit and D2D CRM, you're comparing the market leader against a focused challenger that shares the same target customer.\n\nSalesRabbit launched in 2013 and has spent a decade accumulating 528+ verified G2 reviews, $5M in ARR, and an expanding platform that now includes AI (DataGrid), e-commerce proposals (via Roofle), and native integrations with tools like Sunrun, Solarwinds, and PestRoutes. It's the platform that most D2D reps have heard of — which matters for recruiting.\n\nD2D CRM takes a different bet: zero feature bloat, zero distraction from the core job of knocking doors and tracking results. Built ground-up for D2D (as the name signals), it scores 4.0/5 on G2 across 64 reviews. The lower review count partly reflects its smaller market share, but also that it serves a more specific, self-selected audience. Pricing is quote-based, which can mean significant savings for smaller teams.\n\nThe key question: does your team need SalesRabbit's ecosystem (AI, training content, 30+ integrations, Roofle) or just solid D2D workflow software? If you're a team of 5 roofing reps who want to track doors knocked, assign territories, and manage leads — D2D CRM can absolutely do that job. If you're building a 50-rep solar org and want a platform that grows with you, SalesRabbit is the safer long-term investment.",
+    differences: [
+      { label: "G2 Rating", tool1: "4.3/5 — 528 reviews", tool2: "4.0/5 — 64 reviews" },
+      { label: "Market Position", tool1: "#1 D2D platform by review volume", tool2: "Focused challenger, niche adopters" },
+      { label: "Starting Price", tool1: "$39/user/mo (Team) or free Lite", tool2: "Contact for pricing" },
+      { label: "Platform Scope", tool1: "Full platform — AI, training, gamification, proposals", tool2: "Core D2D workflows, no bloat" },
+      { label: "AI Features", tool1: "DataGrid AI — lead scoring & prioritization", tool2: "Not highlighted" },
+      { label: "Training Content", tool1: "Video library + in-app coaching modules", tool2: "Not a feature" },
+      { label: "Integrations", tool1: "30+ direct integrations + Zapier", tool2: "Limited — focused product" },
+      { label: "Roofle / Proposals", tool1: "Yes — e-commerce pricing via Roofle (2026)", tool2: "No" },
+      { label: "Founded", tool1: "2013 — 12+ years in market", tool2: "Newer entrant" },
+    ],
+    winnerOverall: "tool1",
+    winnerReason:
+      "SalesRabbit's combination of scale (528 reviews), AI features, and the Roofle acquisition makes it the stronger choice for most growing D2D teams. D2D CRM is a legitimate option for smaller teams that want pure-play simplicity and potentially lower cost.",
+  },
+
+  {
+    slug: "salesrabbit-vs-sunbase",
+    title: "SalesRabbit vs Sunbase (2026)",
+    metaDescription:
+      "SalesRabbit vs Sunbase — which D2D CRM is better for solar and roofing teams in 2026? Compare features, pricing, vertical focus, and user reviews.",
+    tool1: "salesrabbit",
+    tool2: "sunbase",
+    verdict:
+      "For solar teams specifically, this is a genuine contest. Sunbase was purpose-built for solar, roofing, and home services and integrates deeply with the solar sales workflow. SalesRabbit has broader D2D capabilities and the Roofle acquisition strengthens its roofing play — but Sunbase's vertical depth may edge it out for solar-first organizations.",
+    bestFor1:
+      "Multi-vertical D2D teams or roofing-first companies that want the most complete platform — especially post-Roofle acquisition — with training content, AI lead scoring, and a proven track record across industries.",
+    bestFor2:
+      "Solar, roofing, and home services companies that want a CRM built specifically around their sales workflow — from canvassing to financing to installation scheduling — in a single vertical-native platform.",
+    summary:
+      "SalesRabbit vs Sunbase is one of the more interesting comparisons in the D2D space because both tools have serious credibility in overlapping verticals.\n\nSunbase was built from day one for solar, roofing, and home services. It handles the full lifecycle: canvassing and lead capture → proposal generation → financing → project management → installation scheduling. If you're a solar company that wants one platform instead of three, Sunbase has a compelling argument. It holds a 4.2/5 G2 rating with 143 reviews — a strong signal for a vertical-focused platform.\n\nSalesRabbit has traditionally been associated with solar and roofing as well, but with broader scope. Its January 2026 acquisition of Roofle — which adds e-commerce pricing, AI financing assistance, and digital proposal tools — directly takes aim at Sunbase's vertical depth in roofing. SalesRabbit's DataGrid AI for lead prioritization and its 528-review G2 track record give it stronger social proof.\n\nThe deciding factor is often what comes after the knock. If your solar operation needs proposal → financing → installation project management all in one tool, Sunbase's native workflow is hard to beat. If you're primarily optimizing the canvassing and territory phase and use separate tools for post-sale, SalesRabbit's platform is superior.",
+    differences: [
+      { label: "G2 Rating", tool1: "4.3/5 — 528 reviews", tool2: "4.2/5 — 143 reviews" },
+      { label: "Vertical Focus", tool1: "Multi-vertical D2D — strongest in roofing + solar", tool2: "Solar, roofing & home services native" },
+      { label: "Starting Price", tool1: "$39/user/mo (Team) or free Lite", tool2: "Contact for pricing" },
+      { label: "Solar Workflow", tool1: "Canvassing + Roofle proposals (2026)", tool2: "Full lifecycle — canvass to install" },
+      { label: "Financing Tools", tool1: "Via Roofle acquisition", tool2: "Built-in financing workflow" },
+      { label: "Project Management", tool1: "Not a core feature", tool2: "Post-sale project tracking included" },
+      { label: "AI Features", tool1: "DataGrid AI — lead prioritization", tool2: "Not highlighted" },
+      { label: "Best For", tool1: "Roofing + multi-vertical D2D teams", tool2: "Solar-first companies needing full lifecycle" },
+    ],
+    winnerOverall: "tie",
+    winnerReason:
+      "This one depends entirely on your vertical depth need. Solar companies wanting canvass-to-install in one tool: Sunbase. Roofing teams or multi-vertical D2D orgs wanting the best-in-class platform with AI and the Roofle ecosystem: SalesRabbit.",
+  },
+
+  {
+    slug: "salesrabbit-vs-leadsquared",
+    title: "SalesRabbit vs LeadSquared Field Force (2026)",
+    metaDescription:
+      "SalesRabbit vs LeadSquared Field Force — D2D-native platform vs enterprise field sales automation. Which is right for your team in 2026?",
+    tool1: "salesrabbit",
+    tool2: "leadsquared-field-force",
+    verdict:
+      "For D2D canvassing teams in North America, SalesRabbit wins with no contest — it was built for exactly this use case. LeadSquared Field Force is the right choice for enterprise field sales organizations, particularly in India and Southeast Asia, that need compliance-heavy workflows, deep CRM automation, and integration with large enterprise tech stacks.",
+    bestFor1:
+      "D2D sales teams in roofing, solar, pest control, and home security that need territory management, canvassing tools, and a mobile-first platform optimized for door-to-door selling.",
+    bestFor2:
+      "Enterprise organizations with large distributed field sales forces (50–5,000+ reps) that need automated lead distribution, compliance tracking, attendance management, and deep CRM workflow automation.",
+    summary:
+      "SalesRabbit and LeadSquared Field Force serve field sales teams, but they're built for fundamentally different organizations and selling motions.\n\nSalesRabbit is the gold standard for D2D canvassing in North America. Its entire product philosophy is built around teams that knock doors — territory assignment, pin mapping, lead disposition tracking, and mobile-first rep management. The Roofle acquisition in January 2026 made it even more vertically dominant in roofing. With 528 G2 reviews and $5M ARR, it's the platform with the deepest D2D-specific tooling in the market.\n\nLeadSquared Field Force comes from a different tradition. Originally designed for enterprise clients in banking, insurance, and healthcare in India and Southeast Asia, it excels at managing large distributed sales forces with complex compliance and approval workflows. Think 500-rep mortgage sales teams, not 20-rep roofing crews. At $25/user/month it prices competitively, but the real buyer is an organization with an IT team, an existing CRM, and enterprise integration requirements.\n\nIf your team knocks doors in residential or commercial markets in North America, this comparison probably ends at 'use SalesRabbit.' If you're a multinational enterprise deploying field sales reps across multiple regions with complex routing and compliance requirements, LeadSquared Field Force is worth a serious evaluation.",
+    differences: [
+      { label: "Primary Market", tool1: "North America — D2D residential & commercial", tool2: "Global enterprise — banking, insurance, healthcare" },
+      { label: "Starting Price", tool1: "$39/user/mo (Team) or free Lite", tool2: "$25/user/mo" },
+      { label: "G2 Rating", tool1: "4.3/5 — 528 reviews", tool2: "4.2/5 — 312 reviews" },
+      { label: "Team Size Sweet Spot", tool1: "5–200 reps", tool2: "50–5,000+ reps" },
+      { label: "D2D Canvassing", tool1: "Core feature — territory, pins, dispositions", tool2: "Not a primary use case" },
+      { label: "Enterprise Compliance", tool1: "Not a focus", tool2: "Deep compliance & audit trails" },
+      { label: "CRM Automation", tool1: "Good — 30+ integrations", tool2: "Enterprise-grade workflow automation" },
+      { label: "Attendance / HR Tools", tool1: "Not included", tool2: "Attendance tracking, expense management" },
+      { label: "Mobile App", tool1: "Excellent — D2D native", tool2: "Good — optimized for enterprise workflows" },
+    ],
+    winnerOverall: "tool1",
+    winnerReason:
+      "For the audience most likely to be reading this comparison — D2D sales teams in North America — SalesRabbit wins clearly. LeadSquared Field Force wins for large enterprise deployments in Asia-Pacific or organizations with complex compliance and attendance requirements.",
+  },
+
+  {
+    slug: "insitu-sales-vs-salesrabbit",
+    title: "InSitu Sales vs SalesRabbit (2026)",
+    metaDescription:
+      "InSitu Sales vs SalesRabbit — wholesale distribution field sales vs D2D canvassing platform. Compare pricing, features, and which fits your team.",
+    tool1: "insitu-sales",
+    tool2: "salesrabbit",
+    verdict:
+      "These tools solve different problems for different field sales teams. InSitu Sales is built for wholesale distributors and CPG companies whose reps take orders in the field. SalesRabbit is built for D2D canvassing and new customer acquisition. If your reps visit existing accounts and take orders, InSitu wins. If your reps knock doors to find new customers, SalesRabbit wins.",
+    bestFor1:
+      "Wholesale distributors, CPG brands, food & beverage companies, and manufacturers whose field reps visit retail accounts, present new products, and take orders directly in the field.",
+    bestFor2:
+      "D2D canvassing teams in roofing, solar, pest control, and home security that need territory assignment, lead tracking, and new customer acquisition workflows.",
+    summary:
+      "InSitu Sales and SalesRabbit both qualify as 'field sales software,' but they represent two very different sales motions that rarely overlap in practice.\n\nInSitu Sales was built for the wholesale distribution and CPG world — where sales reps drive routes visiting grocery stores, restaurants, or retailers, presenting products, checking inventory, and taking orders on the spot. Its core features include mobile order management, product catalog browsing, digital invoicing, and route planning for account managers with existing customer relationships. At $20/user/month, it's one of the more affordable options in its category. The 4.2/5 G2 rating across 78 reviews shows consistent satisfaction in its niche.\n\nSalesRabbit is the leading D2D canvassing platform — built for teams that knock doors they've never knocked before to acquire new residential or commercial customers. Territory heat maps, lead disposition tracking, rep gamification, and the Roofle acquisition for roofing proposals put it in a different category entirely from InSitu's account management focus.\n\nThe buying decision here almost never involves both tools as genuine alternatives — you know which sales motion you run. But if you're at a company that does both (say, a home services company that both acquires customers via D2D and manages ongoing accounts), the tools don't overlap — they complement each other.",
+    differences: [
+      { label: "Primary Use Case", tool1: "Order management for existing wholesale/CPG accounts", tool2: "D2D canvassing & new customer acquisition" },
+      { label: "Starting Price", tool1: "$20/user/mo", tool2: "$39/user/mo (Team) or free Lite" },
+      { label: "G2 Rating", tool1: "4.2/5 — 78 reviews", tool2: "4.3/5 — 528 reviews" },
+      { label: "Order Management", tool1: "Core feature — digital orders, invoices, catalog", tool2: "Not included" },
+      { label: "Territory / Pin Mapping", tool1: "Route planning for existing accounts", tool2: "Full territory assignment & heatmaps" },
+      { label: "New Customer Acquisition", tool1: "Not designed for cold canvassing", tool2: "Core use case" },
+      { label: "Vertical Fit", tool1: "Wholesale, CPG, food & beverage, manufacturing", tool2: "Roofing, solar, pest control, home security" },
+      { label: "CRM Depth", tool1: "Account & product-centric", tool2: "Lead & pipeline-centric" },
+    ],
+    winnerOverall: "tool1",
+    winnerReason:
+      "For field reps managing wholesale accounts, product catalogs, routes, and orders — InSitu Sales wins. It's purpose-built for exactly this workflow at $20/user/mo versus SalesRabbit's $39+/user/mo. InSitu's mobile order management, digital invoicing, and account-centric CRM make it the right tool for distribution and CPG reps. SalesRabbit wins for pure D2D canvassing teams acquiring new customers cold. Know your sales motion — if your reps visit existing accounts and close orders, InSitu is the better investment.",
+  },
+
+  {
+    slug: "spotio-vs-knockio",
+    title: "SPOTIO vs Knockio (2026)",
+    metaDescription:
+      "SPOTIO vs Knockio — enterprise D2D platform vs lean canvassing tool. Compare pricing, features, and which field sales app is right for your team.",
+    tool1: "spotio",
+    tool2: "knockio",
+    verdict:
+      "SPOTIO is the full enterprise D2D platform — powerful territory analytics, 5,000+ integrations, and AI coaching. Knockio is the fast, lean canvassing tool for teams that want simplicity over depth. SPOTIO for scale; Knockio for speed.",
+    bestFor1:
+      "Mid-market and enterprise D2D teams (10+ reps) in solar, telecom, and home security that need deep territory analytics, CRM integrations, and AI-powered coaching tools.",
+    bestFor2:
+      "Small to mid-size D2D canvassing teams that want a clean, affordable platform to track doors, manage leads, and assign territories without the complexity of an enterprise tool.",
+    summary:
+      "SPOTIO and Knockio both help D2D teams knock doors and track results — but they sit at very different levels of the market.\n\nSPOTIO is one of the most feature-rich D2D platforms available. Its territory visualization scores 9.7/10 on G2 — the highest in the category — and its March 2025 AI coaching launch added real-time rep performance insights. With 5,000+ app integrations via Zapier and native connectors for Salesforce, HubSpot, and NetSuite, it's built for organizations with existing tech stacks. The catch: a 5-user minimum and annual-only contracts mean SPOTIO is a committed purchase.\n\nKnockio takes the opposite philosophy. Built for simplicity, it gives reps exactly what they need on the doorstep — territory pins, lead capture, disposition logging, and basic route planning — without layers of enterprise overhead. Its 4.4/5 G2 rating across 97 reviews is strong for a newer tool, and consistent reports of affordable pricing make it popular with smaller crews and budget-sensitive operators.\n\nFor a 3-rep roofing team just starting to systematize their canvassing, SPOTIO's 5-user minimum and annual contract are unnecessary barriers. For a 50-rep solar operation with a CRM and marketing stack to integrate, Knockio's simplicity may leave them wanting more. Choose based on team size and sophistication level.",
+    differences: [
+      { label: "Starting Price", tool1: "$25/user/mo (5-user min, annual only)", tool2: "Affordable — contact for pricing" },
+      { label: "User Minimum", tool1: "5 users minimum", tool2: "No minimum" },
+      { label: "Contract Type", tool1: "Annual contract required", tool2: "Flexible" },
+      { label: "G2 Rating", tool1: "4.4/5 — 412 reviews", tool2: "4.4/5 — 97 reviews" },
+      { label: "Territory Analytics", tool1: "9.7/10 G2 — category-leading heatmaps", tool2: "Standard territory assignment" },
+      { label: "AI Features", tool1: "SPOTIO AI — coaching + insights (Mar 2025)", tool2: "Basic automation" },
+      { label: "Integrations", tool1: "5,000+ via Zapier + native CRM suite", tool2: "Core integrations" },
+      { label: "Best Team Size", tool1: "10–200+ reps", tool2: "1–20 reps" },
+    ],
+    winnerOverall: "tie",
+    winnerReason:
+      "Team size is the deciding factor. Under 10 reps or budget-conscious: Knockio is faster to start and lighter to manage. 10+ reps with CRM integration needs: SPOTIO's analytics and integrations justify the commitment.",
+  },
+
+  {
+    slug: "spotio-vs-sunbase",
+    title: "SPOTIO vs Sunbase (2026)",
+    metaDescription:
+      "SPOTIO vs Sunbase — which D2D platform is better for solar and home services teams in 2026? Compare features, pricing, and vertical fit.",
+    tool1: "spotio",
+    tool2: "sunbase",
+    verdict:
+      "SPOTIO wins for multi-vertical D2D teams that need the deepest territory analytics and CRM integrations. Sunbase wins for solar, roofing, and home services companies that need a single platform from canvassing all the way through installation project management.",
+    bestFor1:
+      "Enterprise D2D teams across multiple verticals that need SPOTIO's territory visualization, 5,000+ integrations, and AI coaching tools — particularly in solar, telecom, and home security.",
+    bestFor2:
+      "Solar, roofing, and home improvement companies that want a vertical-native CRM covering the full sales and project lifecycle: canvassing, proposals, financing, and installation management.",
+    summary:
+      "SPOTIO and Sunbase compete directly in the solar and roofing segments, but they represent different philosophies on how much scope a single platform should cover.\n\nSPOTIO is a horizontal D2D platform — best in class at territory management, lead tracking, and rep performance analytics across any vertical. Its 9.7/10 G2 territory visualization score and 5,000+ integrations make it the choice for organizations that want best-in-breed canvassing tooling and will handle proposals, financing, and project management with separate specialized tools.\n\nSunbase is a vertical platform — built specifically for solar, roofing, and home services, it covers the full customer journey from first knock through to installation scheduling. This 'one platform' approach resonates deeply with solar companies tired of juggling separate tools for canvassing (SPOTIO), proposals (SolarNexus), and project management (Scoop). The tradeoff is that Sunbase's territory analytics depth doesn't match SPOTIO's, and its integration ecosystem is smaller.\n\nThe buyer who chooses SPOTIO typically has a more mature tech stack and wants best-in-class at the canvassing layer, integrating with separate solar proposal or project management tools. The buyer who chooses Sunbase typically wants vertical simplicity and is willing to trade some analytics depth for a cohesive end-to-end workflow.",
+    differences: [
+      { label: "G2 Rating", tool1: "4.4/5 — 412 reviews", tool2: "4.2/5 — 143 reviews" },
+      { label: "Starting Price", tool1: "$25/user/mo (5-user min, annual)", tool2: "Contact for pricing" },
+      { label: "Platform Scope", tool1: "Canvassing & territory — horizontal", tool2: "Full lifecycle — canvass to install" },
+      { label: "Territory Analytics", tool1: "9.7/10 G2 — best in class", tool2: "Good — vertical-specific" },
+      { label: "Solar / Roofing Depth", tool1: "Strong canvassing + integrations", tool2: "Native — proposals, financing, projects" },
+      { label: "Integrations", tool1: "5,000+ via Zapier + native CRM suite", tool2: "Focused — solar/home services ecosystem" },
+      { label: "AI Features", tool1: "SPOTIO AI — coaching insights (Mar 2025)", tool2: "Not highlighted" },
+      { label: "Project Management", tool1: "Not included", tool2: "Post-sale project tracking built in" },
+    ],
+    winnerOverall: "tie",
+    winnerReason:
+      "Best-in-class territory analytics and integrations → SPOTIO. End-to-end solar/roofing/home services lifecycle in one platform → Sunbase. Both are genuinely strong in their lane.",
+  },
+
+  {
+    slug: "spotio-vs-repmove",
+    title: "SPOTIO vs RepMove (2026)",
+    metaDescription:
+      "SPOTIO vs RepMove — enterprise D2D platform vs the highest-rated outside sales app on the market. Compare pricing, features, and user satisfaction.",
+    tool1: "spotio",
+    tool2: "repmove",
+    verdict:
+      "SPOTIO is the enterprise-grade D2D platform with analytics depth. RepMove is the highest-rated outside sales app on G2 — which matters enormously when you factor in rep adoption. For small teams or individual reps, RepMove's 4.9/5 rating and $20/user price point are hard to argue with.",
+    bestFor1:
+      "Mid-market and enterprise D2D teams (10+ reps) that need SPOTIO's territory visualization, AI coaching, and enterprise CRM integrations — and are willing to invest in annual contracts.",
+    bestFor2:
+      "Individual outside sales reps and small teams (1–15 reps) who want the best-reviewed outside sales app available, with proven territory management and route optimization at $20/user/month.",
+    summary:
+      "SPOTIO and RepMove is a fascinating comparison because the data tells two very different stories.\n\nBy feature count, SPOTIO wins — territory analytics at 9.7/10 on G2, AI coaching launched in March 2025, 5,000+ integrations, and a customer list that includes enterprise names. It's the tool sales leaders and VP Sales choose when they want to signal a serious technology investment.\n\nBy user satisfaction, RepMove wins — with a 4.9/5 G2 rating across 214 reviews, it's not just the highest-rated outside sales app, it's one of the highest-rated field sales tools in any category. That gap between SPOTIO's 4.4/5 and RepMove's 4.9/5 represents a meaningful difference in how reps feel using the product daily — and rep adoption is the single biggest factor in whether any field sales tool succeeds.\n\nAt $20/user/month versus SPOTIO's $25/user/month (with a 5-user minimum and annual contract), RepMove is also materially cheaper and more flexible. The downside: RepMove serves a more limited feature set, particularly on the enterprise analytics side, and its ecosystem integrations don't match SPOTIO's.\n\nThe deciding factor is team size and strategy. Individual rep or small team that needs daily-use excellence? RepMove. Enterprise operation that needs analytics dashboards, AI coaching, and Salesforce integration? SPOTIO.",
+    differences: [
+      { label: "G2 Rating", tool1: "4.4/5 — 412 reviews", tool2: "4.9/5 — 214 reviews — category best" },
+      { label: "Starting Price", tool1: "$25/user/mo (5-user min, annual only)", tool2: "$20/user/mo (no minimum)" },
+      { label: "Contract Flexibility", tool1: "Annual contract required", tool2: "Monthly available" },
+      { label: "User Minimum", tool1: "5 users required", tool2: "No minimum — works for 1 rep" },
+      { label: "Territory Analytics", tool1: "9.7/10 G2 — category-leading", tool2: "Strong — optimized for daily use" },
+      { label: "AI Features", tool1: "SPOTIO AI coaching (Mar 2025)", tool2: "Not highlighted" },
+      { label: "Integrations", tool1: "5,000+ via Zapier + native CRM suite", tool2: "Core integrations" },
+      { label: "Rep Satisfaction", tool1: "4.4/5 — good", tool2: "4.9/5 — exceptionally high" },
+      { label: "Best For", tool1: "Enterprise D2D teams, analytics-focused managers", tool2: "Individual reps and small teams" },
+    ],
+    winnerOverall: "tie",
+    winnerReason:
+      "The best tool is the one your reps actually use. RepMove's 4.9/5 rating is a strong signal of daily usability — choose it for small teams. SPOTIO's analytics depth and enterprise integrations are worth the premium for larger organizations.",
+  },
+
+  {
+    slug: "badger-maps-vs-knockio",
+    title: "Badger Maps vs Knockio (2026)",
+    metaDescription:
+      "Badger Maps vs Knockio — route optimization for account managers vs canvassing software for D2D teams. Which field sales app is right for you?",
+    tool1: "badger-maps",
+    tool2: "knockio",
+    verdict:
+      "These tools serve different sales motions. Badger Maps is the right tool for outside sales reps who manage existing accounts and need to optimize their driving route. Knockio is the right tool for D2D canvassing teams knocking new doors. Rarely will the same rep need both.",
+    bestFor1:
+      "Outside sales reps and account managers who visit existing clients on a regular schedule and need to dramatically cut drive time, increase daily meetings, and visualize their territory of named accounts.",
+    bestFor2:
+      "D2D canvassing teams looking for a simple, affordable platform to track doors knocked, capture leads, assign territories, and follow up with prospects.",
+    summary:
+      "Badger Maps and Knockio have more in common visually — both have maps, both have mobile apps, both involve field reps moving through physical territories — than they do operationally.\n\nBadger Maps' entire product is built around a single insight: outside sales reps who manage existing accounts waste an enormous amount of time driving inefficiently between appointments. Its 'Lasso' feature lets you select customers on a map and instantly get an optimized route. The company reports 20% less drive time and 22% more meetings per week for average users — and a 90-day money-back guarantee backs that claim. At $49/user/month and 4.3/5 G2 across 634 reviews (the most reviews of any tool in this comparison), it's the most proven route optimization tool in the outside sales category.\n\nKnockio is fundamentally different: it's for teams knocking doors they've never knocked before. There are no 'existing accounts' to route between — there's a territory of unknown households that need to be systematically worked. Knockio's features (territory pins, disposition tracking, lead capture) are purpose-built for cold D2D canvassing, not account management.\n\nIf your reps say 'I have 30 clients to visit this week,' use Badger Maps. If your reps say 'I need to work this neighborhood this week,' use Knockio.",
+    differences: [
+      { label: "Primary Use Case", tool1: "Route optimization for account visits", tool2: "Cold D2D canvassing & territory tracking" },
+      { label: "Starting Price", tool1: "$49/user/mo", tool2: "Affordable — contact for pricing" },
+      { label: "G2 Rating", tool1: "4.3/5 — 634 reviews", tool2: "4.4/5 — 97 reviews" },
+      { label: "Best Sales Motion", tool1: "Account management & territory coverage", tool2: "Cold canvassing & new customer acquisition" },
+      { label: "Route Optimization", tool1: "Core feature — 'Lasso' function", tool2: "Basic routing" },
+      { label: "Money-Back Guarantee", tool1: "90 days", tool2: "Standard trial" },
+      { label: "Lead Capture", tool1: "CRM sync from existing accounts", tool2: "New prospect capture at door" },
+      { label: "Revenue", tool1: "$8M ARR — profitable & self-funded", tool2: "Early stage" },
+    ],
+    winnerOverall: "tie",
+    winnerReason:
+      "Different tools for different jobs. Route optimization for existing accounts → Badger Maps. Cold D2D canvassing → Knockio. Don't substitute one for the other.",
+  },
+
+  {
+    slug: "badger-maps-vs-maptive",
+    title: "Badger Maps vs Maptive (2026)",
+    metaDescription:
+      "Badger Maps vs Maptive — both offer territory mapping and route planning, but for very different users. Compare features, pricing, and use cases.",
+    tool1: "badger-maps",
+    tool2: "maptive",
+    verdict:
+      "Badger Maps is the clear choice for individual field sales reps and small teams who want an optimized daily route and CRM integration. Maptive is the right pick for data and operations teams that need enterprise-grade territory visualization and analysis tools rather than a rep-facing mobile app.",
+    bestFor1:
+      "Outside sales reps and small field sales teams (1–20) who need daily route optimization, CRM data visualization on a map, and a mobile app for in-field use.",
+    bestFor2:
+      "Sales operations teams, analysts, and larger organizations that need to visualize large datasets on custom maps, build territory boundaries, and perform business intelligence on geographic sales data.",
+    summary:
+      "Badger Maps and Maptive both involve maps and field sales, but they're built for fundamentally different users within a sales organization.\n\nBadger Maps is a rep tool. You connect your CRM, see your accounts on a map, draw a lasso around the ones you want to visit, and get a route. The product philosophy is centered on making individual reps more efficient in their daily work — more meetings, less driving, easier check-ins. The $49/user/month pricing, 4.3/5 G2 rating, and 90-day money-back guarantee target sales managers who want to equip their reps with a proven productivity tool.\n\nMaptive is an analytics and operations tool. Starting at $104/user/month — over twice the price of Badger Maps — it targets teams that need to process large data sets, build custom territory boundaries, perform heat map analysis, and create presentation-quality geographic visualizations. Think sales operations analysts, regional managers doing territory planning, or marketing teams analyzing customer density. Maptive isn't typically installed on a sales rep's iPhone — it's used on a laptop by someone making territory strategy decisions.\n\nThe pricing gap alone ($49 vs $104) signals the different markets. If you're equipping a team of 10 outside reps with a daily-use tool, Badger Maps is the better investment. If you're doing territory analysis for a 200-rep organization, Maptive's analytical depth may justify the premium.",
+    differences: [
+      { label: "Starting Price", tool1: "$49/user/mo", tool2: "$104/user/mo" },
+      { label: "G2 Rating", tool1: "4.3/5 — 634 reviews", tool2: "4.3/5 — 112 reviews" },
+      { label: "Primary User", tool1: "Field sales reps — daily route optimization", tool2: "Sales ops & analysts — territory planning" },
+      { label: "Mobile App", tool1: "Yes — core rep experience on mobile", tool2: "Desktop-first — browser-based" },
+      { label: "Data Visualization", tool1: "Account maps + route optimization", tool2: "Advanced — custom territories, heat maps, filters" },
+      { label: "Dataset Size", tool1: "Optimized for CRM-size account lists", tool2: "Handles large enterprise datasets" },
+      { label: "CRM Integration", tool1: "Deep — Salesforce, HubSpot, Pipedrive, more", tool2: "CSV import + integrations" },
+      { label: "Money-Back Guarantee", tool1: "90 days", tool2: "Free trial only" },
+    ],
+    winnerOverall: "tool1",
+    winnerReason:
+      "For field sales teams equipping reps, Badger Maps wins on price, mobile experience, CRM integration, and the 90-day guarantee. Maptive wins for sales ops teams doing territory analysis — but that's a different buyer entirely.",
+  },
+
+  {
+    slug: "knockio-vs-knockbase",
+    title: "Knockio vs Knockbase (2026)",
+    metaDescription:
+      "Knockio vs Knockbase — two purpose-built D2D canvassing tools compared. Which is better for your door-to-door sales team in 2026?",
+    tool1: "knockio",
+    tool2: "knockbase",
+    verdict:
+      "Both tools are built for D2D canvassing, but Knockbase has a higher G2 rating (4.6 vs 4.4) and positions itself as the premium high-performance option. Knockio wins on simplicity and affordability. The choice often comes down to budget and how sophisticated your canvassing operation needs to be.",
+    bestFor1:
+      "Small to mid-size D2D teams that want a clean, simple, and affordable canvassing platform to get started quickly without heavy implementation or high monthly costs.",
+    bestFor2:
+      "High-performance D2D teams — particularly in solar, roofing, and home security — that want the highest-rated pure-play canvassing software with smart territory intelligence and performance analytics.",
+    summary:
+      "Knockio and Knockbase are direct competitors — both purpose-built D2D canvassing tools targeting the same reps with similar feature sets. The differences lie in positioning, depth, and cost.\n\nKnockbase has the higher G2 rating: 4.6/5 across 178 reviews, making it one of the highest-rated D2D tools in the market. It positions itself as a 'smart D2D platform for high-performance field teams' — suggesting a buyer who is serious about using data to improve canvassing performance, not just track doors knocked. Features include territory heat mapping, smart lead routing, and rep performance analytics.\n\nKnockio takes the simpler path — 'simple, powerful canvassing software' is its tagline. With 97 reviews at 4.4/5 and consistently reported lower pricing, it targets teams who want a reliable, fast-to-deploy canvassing solution without a steep learning curve. The 0.2 G2 rating gap between the two (4.6 vs 4.4) is meaningful but not enormous.\n\nBoth platforms are growing. Both are reasonably priced compared to enterprise D2D tools like SPOTIO. The decision often comes down to: do you want the highest-rated tool in class (Knockbase) or the simplest possible tool that does the job (Knockio)?",
+    differences: [
+      { label: "G2 Rating", tool1: "4.4/5 — 97 reviews", tool2: "4.6/5 — 178 reviews" },
+      { label: "Positioning", tool1: "Simple, affordable D2D canvassing", tool2: "High-performance smart D2D platform" },
+      { label: "Starting Price", tool1: "Affordable — contact for pricing", tool2: "Contact for pricing" },
+      { label: "Territory Intelligence", tool1: "Standard territory assignment", tool2: "Smart territory heat mapping" },
+      { label: "Performance Analytics", tool1: "Basic reporting", tool2: "Rep performance dashboards" },
+      { label: "Ease of Setup", tool1: "Fast — designed for simplicity", tool2: "More feature-rich — slightly more setup" },
+      { label: "Best For", tool1: "Budget-conscious teams wanting simplicity", tool2: "Performance-focused teams wanting analytics" },
+    ],
+    winnerOverall: "tool2",
+    winnerReason:
+      "Knockbase's 4.6/5 G2 rating and stronger analytics make it the better choice for teams that want to continuously improve their D2D performance. Knockio is the right choice for teams prioritizing simplicity and fast deployment.",
+  },
+
+  {
+    slug: "repmove-vs-outfield",
+    title: "RepMove vs Outfield (2026)",
+    metaDescription:
+      "RepMove vs Outfield — two affordable, flexible field sales platforms compared. Which is right for your outside sales team in 2026?",
+    tool1: "repmove",
+    tool2: "outfield",
+    verdict:
+      "RepMove wins on user satisfaction — its 4.9/5 G2 rating is the highest of any outside sales app. Outfield wins on gamification and engagement features for teams that want competitive leaderboards and rep motivation tools baked in. Both are priced at $20/user/month, making this a feature-by-feature decision.",
+    bestFor1:
+      "Individual outside sales reps and small teams that want the highest-rated field sales app available — proven daily-use excellence with territory management and route optimization.",
+    bestFor2:
+      "Field sales teams that want gamification, leaderboards, and rep engagement tools baked into their platform — particularly teams with high turnover or reps who respond well to competitive dynamics.",
+    summary:
+      "RepMove and Outfield are two of the most compelling value options in field sales software — both priced at $20/user/month with no user minimums, making them accessible to teams of any size.\n\nRepMove holds the highest G2 rating of any outside sales app on the market: 4.9/5 across 214 reviews. That's not a rounding error — it represents genuine daily-use excellence and a product that reps actively love using. Core strengths are route optimization, territory management, and a mobile experience polished enough that adoption isn't a fight.\n\nOutfield's differentiator is gamification. Built-in leaderboards, achievement tracking, and rep performance competitions make it uniquely suited for sales cultures that run on competition. Its 4.4/5 G2 rating across 186 reviews is strong, and its marketing platform (for field marketing activations, not just sales) gives it additional reach for teams that blend sales and promotion roles.\n\nBoth tools offer the no-minimum, flexible contract model that makes them approachable for teams of any size. At identical price points, the decision comes down to: is your team optimization-focused (RepMove) or competition-focused (Outfield)?",
+    differences: [
+      { label: "G2 Rating", tool1: "4.9/5 — 214 reviews — highest in category", tool2: "4.4/5 — 186 reviews" },
+      { label: "Starting Price", tool1: "$20/user/mo", tool2: "$20/user/mo" },
+      { label: "User Minimum", tool1: "No minimum", tool2: "No minimum" },
+      { label: "Gamification", tool1: "Not a primary feature", tool2: "Core differentiator — leaderboards, achievements" },
+      { label: "Route Optimization", tool1: "Strong — daily-use focus", tool2: "Included" },
+      { label: "Field Marketing", tool1: "Sales-focused", tool2: "Covers field marketing activations too" },
+      { label: "Rep Adoption Signal", tool1: "4.9/5 — extremely high", tool2: "4.4/5 — strong" },
+      { label: "Best For", tool1: "Teams prioritizing rep productivity & satisfaction", tool2: "Teams that run on competition & gamification" },
+    ],
+    winnerOverall: "tool1",
+    winnerReason:
+      "RepMove's 4.9/5 rating is the strongest adoption signal in field sales software — and rep adoption is the ultimate success metric for any field tool. Outfield wins for teams where gamification is a core cultural element.",
+  },
+
+  {
+    slug: "leadbeam-vs-spotio",
+    title: "Leadbeam vs SPOTIO (2026)",
+    metaDescription:
+      "Leadbeam vs SPOTIO — AI-powered field sales newcomer vs the established D2D enterprise platform. Which is right for your team in 2026?",
+    tool1: "leadbeam",
+    tool2: "spotio",
+    verdict:
+      "SPOTIO is the proven enterprise D2D platform with the deepest territory analytics in the category. Leadbeam is the AI-first challenger that promises to save 5+ hours per rep per week — a compelling offer for teams where admin time is a real pain point. If AI automation is your primary driver, Leadbeam deserves a serious look.",
+    bestFor1:
+      "Field sales teams where reps spend too much time on post-call admin, data entry, and CRM updates — and want AI to handle those tasks automatically so they can focus on selling.",
+    bestFor2:
+      "Mid-market and enterprise D2D canvassing teams that need the deepest territory visualization, AI coaching, and enterprise CRM integrations in the market.",
+    summary:
+      "Leadbeam and SPOTIO represent two different bets on where field sales software is going: AI automation vs analytics depth.\n\nLeadbeam is the most explicitly AI-native field sales tool in the market. Its headline claim — saving 5+ hours per rep per week — comes from using AI to automatically log calls, generate visit notes, update CRM records, and surface follow-up recommendations. With a 4.5/5 G2 rating across 93 reviews and $49/user/month pricing, it's targeting the segment of field sales teams that see administrative burden as their biggest productivity drain. It was founded recently and is growing fast.\n\nSPOTIO is the established enterprise D2D platform — its territory visualization scored 9.7/10 on G2, and its March 2025 AI coaching launch shows it's also investing in AI (though from a different angle: coaching managers, not automating rep tasks). Its 412-review track record and 5,000+ integrations make it the safe enterprise choice.\n\nThe interesting question is: as AI becomes table stakes in field sales software, will Leadbeam's AI-first architecture prove more durable than SPOTIO's analytics-first architecture? For now, SPOTIO wins on depth and market position. But for teams where admin time is the bottleneck — not territory analytics — Leadbeam's 5-hours-per-week promise deserves testing.",
+    differences: [
+      { label: "Starting Price", tool1: "$49/user/mo", tool2: "$25/user/mo (5-user min, annual)" },
+      { label: "G2 Rating", tool1: "4.5/5 — 93 reviews", tool2: "4.4/5 — 412 reviews" },
+      { label: "AI Focus", tool1: "Admin automation — call logging, note generation, CRM updates", tool2: "Coaching + territory insights (SPOTIO AI, Mar 2025)" },
+      { label: "Time Savings Claim", tool1: "5+ hours per rep per week", tool2: "Not a primary claim" },
+      { label: "Territory Analytics", tool1: "Standard", tool2: "9.7/10 G2 — category-leading" },
+      { label: "Integrations", tool1: "Growing — AI-native stack", tool2: "5,000+ via Zapier + native CRM suite" },
+      { label: "User Minimum", tool1: "No minimum", tool2: "5 users required" },
+      { label: "Company Stage", tool1: "Fast-growing AI challenger", tool2: "Established enterprise platform" },
+    ],
+    winnerOverall: "tool2",
+    winnerReason:
+      "SPOTIO wins on market traction, integration depth, and territory analytics. Leadbeam wins for teams where AI-driven admin automation is the primary pain point — and may narrow the gap as its platform matures.",
+  },
+
+  {
+    slug: "map-my-customers-vs-knockio",
+    title: "Map My Customers vs Knockio (2026)",
+    metaDescription:
+      "Map My Customers vs Knockio — field CRM with mapping vs pure D2D canvassing tool. Which is right for your field sales team in 2026?",
+    tool1: "map-my-customers",
+    tool2: "knockio",
+    verdict:
+      "Map My Customers wins for outside sales reps managing named accounts and needing a proper CRM with mapping. Knockio wins for D2D canvassing teams working cold territories. Different jobs, different tools.",
+    bestFor1:
+      "B2B outside sales reps and field sales teams managing existing customer relationships who need a mobile CRM with powerful territory visualization, routing, and account management.",
+    bestFor2:
+      "D2D teams focused on cold canvassing — knocking new doors, capturing lead dispositions, and working assigned territories systematically without CRM complexity.",
+    summary:
+      "Map My Customers and Knockio are field sales tools that both involve a map — but the similarities largely end there.\n\nMap My Customers is a field sales CRM. It starts from the premise that you have a list of customers and prospects, and your job is to visit them, log interactions, and manage relationships over time. Its mapping layer shows those accounts geographically, and its routing tools help reps visit them efficiently. At $60/user/month with a 4.5/5 G2 rating across 289 reviews, it targets B2B outside sales teams in industries like medical device, building materials, and food service — where the rep manages a territory of existing accounts and needs to see that territory intelligently.\n\nKnockio starts from a completely different premise: you don't have a list of accounts yet. You have a geographic territory of doors, and your job is to knock them, capture outcomes, and follow up on the promising ones. It's optimized for the 'zero-to-lead' workflow that defines D2D canvassing. Simple, fast, affordable.\n\nThe $60 vs affordable pricing gap reflects the different buyers: Map My Customers targets professional B2B field sales organizations with CRM budgets; Knockio targets lean D2D operations watching every dollar.",
+    differences: [
+      { label: "Primary Use Case", tool1: "Account management CRM with mapping", tool2: "Cold D2D canvassing & territory tracking" },
+      { label: "Starting Price", tool1: "$60/user/mo", tool2: "Affordable — contact for pricing" },
+      { label: "G2 Rating", tool1: "4.5/5 — 289 reviews", tool2: "4.4/5 — 97 reviews" },
+      { label: "CRM Depth", tool1: "Full CRM — contacts, accounts, deals, activity log", tool2: "Lead capture & basic follow-up" },
+      { label: "Best Sales Motion", tool1: "Account management — visiting named clients", tool2: "Cold canvassing — knocking new doors" },
+      { label: "Route Optimization", tool1: "Strong — account visit routing", tool2: "Basic territory routing" },
+      { label: "Vertical Fit", tool1: "B2B field sales — medical, food service, construction", tool2: "D2D residential — roofing, solar, pest control" },
+    ],
+    winnerOverall: "tie",
+    winnerReason:
+      "Map My Customers for B2B account management teams. Knockio for D2D canvassing teams. The right answer depends entirely on whether your reps manage existing relationships or knock new doors.",
+  },
+
+  {
+    slug: "knockbase-vs-d2d-crm",
+    title: "Knockbase vs D2D CRM (2026)",
+    metaDescription:
+      "Knockbase vs D2D CRM — two dedicated D2D platforms compared head to head. Which canvassing software should your team choose in 2026?",
+    tool1: "knockbase",
+    tool2: "d2d-crm",
+    verdict:
+      "Knockbase has a meaningfully higher G2 rating (4.6 vs 4.0) and positions itself as the premium performance-analytics option. D2D CRM wins on pure D2D focus and potentially lower cost. For teams serious about performance tracking and data-driven canvassing, Knockbase's analytics justify the premium.",
+    bestFor1:
+      "High-performance D2D teams that want smart territory intelligence, rep performance dashboards, and analytics-driven canvassing — particularly in solar, roofing, and home security.",
+    bestFor2:
+      "D2D-first teams that want a CRM built entirely around door-to-door workflows without non-D2D features, at a potentially lower price point.",
+    summary:
+      "When comparing Knockbase and D2D CRM, you're looking at two tools that share a core conviction: generic CRMs don't work for D2D, and field sales teams deserve purpose-built software. Their execution and positioning diverge from there.\n\nKnockbase has the stronger market signal: 4.6/5 on G2 across 178 reviews — one of the highest ratings in the D2D category. Its 'smart D2D software for high-performance field teams' positioning signals a buyer who cares about analytics, territory optimization, and performance benchmarking. Features like heat maps, smart lead routing, and rep leaderboards cater to sales managers who want data to drive canvassing decisions.\n\nD2D CRM has a more modest 4.0/5 G2 rating across 64 reviews — which is partially a reflection of its smaller installed base rather than poor quality. Its pitch is straightforward: a CRM designed from the ground up for D2D, without the feature bloat of platforms that serve multiple sales motions. The lower review volume also means less social proof, which matters when evaluating newer tools.\n\nBoth are priced by quote, so cost comparison requires direct evaluation. Knockbase's analytics depth makes it the stronger choice for teams that use data to coach reps and optimize territories. D2D CRM may offer a simpler, potentially more affordable path for teams that need basic D2D workflow software.",
+    differences: [
+      { label: "G2 Rating", tool1: "4.6/5 — 178 reviews", tool2: "4.0/5 — 64 reviews" },
+      { label: "Positioning", tool1: "High-performance smart D2D platform", tool2: "Pure D2D CRM — no bloat" },
+      { label: "Starting Price", tool1: "Contact for pricing", tool2: "Contact for pricing" },
+      { label: "Territory Intelligence", tool1: "Smart heat mapping + lead routing", tool2: "Standard D2D territory tools" },
+      { label: "Performance Analytics", tool1: "Rep dashboards + leaderboards", tool2: "Basic reporting" },
+      { label: "Social Proof", tool1: "178 verified G2 reviews", tool2: "64 verified G2 reviews" },
+      { label: "Best For", tool1: "Data-driven canvassing teams", tool2: "Teams wanting simplest possible D2D CRM" },
+    ],
+    winnerOverall: "tool1",
+    winnerReason:
+      "Knockbase's 4.6/5 G2 rating and deeper analytics make it the stronger choice for most teams. D2D CRM is a reasonable option for teams that want maximum simplicity, but the rating gap is significant.",
+  },
 ];
 
 export const getComparison = (slug: string) => comparisons.find((c) => c.slug === slug);

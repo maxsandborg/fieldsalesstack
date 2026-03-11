@@ -1025,6 +1025,434 @@ export const stacks: Stack[] = [
     ],
     lastUpdated: "2026-03-01",
   },
+
+  // ─── NEW STACKS (Day 5) ───────────────────────────────────────────────────────
+
+  {
+    slug: "solar-enterprise",
+    category: "industry",
+    industry: "Solar",
+    title: "Enterprise Solar Sales Tech Stack (2026)",
+    headline: "The Enterprise Solar Sales Stack Used by 100+ Rep Solar Organizations",
+    metaDescription:
+      "The complete enterprise solar sales tech stack for 2026. Which field sales tools do high-volume solar companies use, what does it cost at scale, and why this combination works for large solar operations.",
+    icon: "☀️",
+    heroGradient: "linear-gradient(135deg, #451a03 0%, #78350f 50%, #f59e0b 100%)",
+    totalCostLow: "$64",
+    totalCostHigh: "$115",
+    totalCostNote: "per rep/mo at 50+ rep scale (billed annually)",
+    intro:
+      "Enterprise solar operations don't just need better canvassing software — they need a platform ecosystem that handles the full acquisition motion at scale. When you're managing 50–300 reps across multiple states, the coordination problems compound: territory overlap, rep performance variance, proposal inconsistency, and CRM data hygiene all become organizational-level challenges.\n\nThe best enterprise solar stacks solve these problems through specialization. Rather than one all-in-one platform that does everything adequately, the highest-performing solar organizations use two to three tools that each do one thing excellently: a territory-and-canvassing platform, a proposal-and-financing tool, and a CRM backbone for post-sale pipeline management.\n\nThis stack guide is specifically for enterprise solar organizations — those managing 50+ reps, running multi-state campaigns, and dealing with the operational complexity that comes with scale. For smaller solar teams, see our solar startup stack guide.",
+    whoIsItFor:
+      "Enterprise solar companies (50–500 reps) running D2D campaigns across multiple states or regions, with existing CRM infrastructure and a need for enterprise-grade territory analytics and rep performance management.",
+    tools: [
+      {
+        slug: "spotio",
+        name: "SPOTIO",
+        role: "Primary territory management & field analytics platform",
+        why:
+          "At enterprise scale, territory analytics and CRM integration depth matter more than any single feature. SPOTIO's 5,000+ integration library connects to Salesforce, HubSpot, and solar-specific CRMs. Its multi-territory management handles complex state-by-state campaign structures. The 9.7/10 territory visualization score is the best in the category.",
+        price: "$25/user/mo",
+        priceNote: "enterprise tiers above entry price",
+        rating: 4.3,
+        reviewCount: 528,
+        keyFeatures: [
+          "Multi-territory management for state-level campaigns",
+          "5,000+ CRM and solar tool integrations",
+          "Enterprise SSO and role-based access controls",
+          "Per-rep and per-territory performance analytics",
+          "Heat map visualization for solar lead density",
+        ],
+        toolsUrl: "/tools/spotio",
+        website: "https://spotio.com",
+        logo: "📍",
+      },
+      {
+        slug: "sunbase",
+        name: "Sunbase",
+        role: "Solar proposal, financing & project management",
+        why:
+          "Enterprise solar operations need proposal consistency across hundreds of reps. Sunbase's native solar workflow — from canvassing lead through proposal, financing options, and installation scheduling — reduces the proposal-to-signature cycle and ensures pricing consistency. The built-in financing workflow reduces friction between the sale and project kickoff.",
+        price: "Contact for pricing",
+        priceNote: "enterprise pricing available",
+        rating: 4.2,
+        reviewCount: 143,
+        keyFeatures: [
+          "Solar-native proposal generation",
+          "Built-in financing workflow",
+          "Installation project management and scheduling",
+          "Utility data integration for solar savings calculations",
+          "Multi-rep proposal consistency controls",
+        ],
+        toolsUrl: "/tools/sunbase",
+        website: "https://sunbasedata.com",
+        logo: "🌞",
+      },
+      {
+        slug: "salesrabbit",
+        name: "SalesRabbit",
+        role: "Rep enablement, training & gamification layer",
+        why:
+          "Enterprise solar organizations with high rep turnover need a platform that gets new reps productive fast. SalesRabbit's training content library, gamified leaderboards, and DataGrid AI lead scoring are the rep-facing productivity layer that SPOTIO's analytics-heavy platform doesn't provide. Many enterprise solar orgs run SPOTIO for management and SalesRabbit for rep-facing tools.",
+        price: "$39/user/mo",
+        priceNote: "annual billing · Free Lite for evaluation",
+        rating: 4.3,
+        reviewCount: 528,
+        keyFeatures: [
+          "Video training library for rep onboarding",
+          "Gamified leaderboards for competitive solar campaigns",
+          "DataGrid AI for residential lead prioritization",
+          "Roofle integration for solar/roofing proposals",
+          "Free Lite tier for evaluating before scaling",
+        ],
+        toolsUrl: "/tools/salesrabbit",
+        website: "https://salesrabbit.com",
+        logo: "🐇",
+      },
+    ],
+    whyThisStack:
+      "Enterprise solar has two distinct management layers that most single platforms don't serve equally well. The first is organizational: territory allocation across states, campaign planning, CRM integration, and performance analytics — SPOTIO excels here. The second is rep-facing: daily workflow, training, motivation, and proposal execution — SalesRabbit and Sunbase excel here.\n\nThe SPOTIO + SalesRabbit + Sunbase combination is the enterprise stack that covers all three layers. It's more expensive than running a single platform, but at 100+ rep scale, the specialization gains — better territory analytics, better training, better proposal consistency — outweigh the integration cost.\n\nNote: not every enterprise solar org needs all three. If your org has strong internal training programs, SalesRabbit may be redundant. If you use a separate CPQ tool for proposals, Sunbase may overlap. Audit your current workflow gaps before adding all three.",
+    verdict:
+      "Enterprise solar: SPOTIO for territory management + Sunbase for solar lifecycle + SalesRabbit for rep enablement. Each tool at its best layer.",
+    faqs: [
+      {
+        question: "What field sales platform do large solar companies use?",
+        answer:
+          "Enterprise solar companies most commonly use SPOTIO for territory analytics and enterprise integrations, with SalesRabbit for rep training and gamification. Sunbase is the leading solar-specific lifecycle platform for organizations that need canvassing through installation in one system. Many larger organizations run two of these three tools in combination.",
+      },
+      {
+        question: "How much does enterprise solar field sales software cost?",
+        answer:
+          "Enterprise solar field sales software costs $25–$115/rep/month depending on the stack. SPOTIO starts at $25/user/mo (enterprise tiers above entry price), SalesRabbit at $39/user/mo, and Sunbase is quote-based. Most enterprise solar orgs negotiate volume pricing at 50+ seats. Budget $64–$90/rep/mo for a two-tool enterprise stack.",
+      },
+    ],
+    lastUpdated: "2026-03-11",
+  },
+
+  {
+    slug: "roofing-mid-market",
+    category: "industry",
+    industry: "Roofing",
+    title: "Mid-Market Roofing Sales Stack (2026)",
+    headline: "The Roofing Sales Stack for 10–50 Rep Teams: Better Than One-Size-Fits-All",
+    metaDescription:
+      "The best field sales tech stack for mid-market roofing companies with 10–50 reps. Tools, pricing, and strategy for the growth stage between startup and enterprise.",
+    icon: "🏠",
+    heroGradient: "linear-gradient(135deg, #1c1917 0%, #44403c 50%, #78716c 100%)",
+    totalCostLow: "$39",
+    totalCostHigh: "$78",
+    totalCostNote: "per rep/mo at 10–50 rep scale (billed annually)",
+    intro:
+      "Mid-market roofing companies — those running 10–50 reps — sit in an awkward zone. They've outgrown the simple tools designed for 3-rep crews (spreadsheets, basic canvassing apps) but don't yet need the complexity and cost of enterprise platforms built for 200+ rep organizations. The wrong tool choice at this stage either caps growth or creates unnecessary overhead.\n\nThe right mid-market roofing stack focuses on three things: territory management that scales from 10 reps to 50 without requiring a platform migration, proposal tools that create consistency across a growing sales team, and analytics that help a 3-person management team identify which reps and territories are generating the most ROI.\n\nThis guide is for roofing companies in the 10–50 rep growth phase that want to invest in the right platform for their next 24 months.",
+    whoIsItFor:
+      "Roofing companies with 10–50 active canvassers and closers, running retail or insurance storm restoration sales, looking for a platform that can handle their current scale and grow with them to 100 reps.",
+    tools: [
+      {
+        slug: "salesrabbit",
+        name: "SalesRabbit",
+        role: "Primary canvassing platform, territory management & rep training",
+        why:
+          "SalesRabbit hits the mid-market roofing sweet spot. The Team plan ($39/user/mo) includes DataGrid AI, territory heat maps, video training, and gamification — all features that matter at 10–50 reps. The Roofle acquisition adds e-commerce roof pricing and digital proposals without needing a separate tool. It scales to 200+ reps if needed.",
+        price: "$39/user/mo",
+        priceNote: "annual billing · Free Lite for evaluation",
+        rating: 4.3,
+        reviewCount: 528,
+        keyFeatures: [
+          "DataGrid AI for lead prioritization by neighborhood",
+          "Territory heat maps and rep GPS tracking",
+          "Roofle integration — e-commerce roof pricing + digital proposals",
+          "Video training library for mid-market onboarding",
+          "Gamified leaderboards for competitive roofing teams",
+        ],
+        toolsUrl: "/tools/salesrabbit",
+        website: "https://salesrabbit.com",
+        logo: "🐇",
+      },
+      {
+        slug: "knockio",
+        name: "Knockio",
+        role: "Budget canvassing layer for high-volume door knockers",
+        why:
+          "Some mid-market roofing companies run a two-tier sales team: senior closers on SalesRabbit and high-volume door knockers on a cheaper canvassing tool. Knockio's affordability and simplicity makes it the right choice for the canvassing-only tier — reps learn it in an hour, and it tracks doors effectively without the platform overhead of full SalesRabbit.",
+        price: "Contact for pricing",
+        priceNote: "typically lower than SalesRabbit",
+        rating: 4.4,
+        reviewCount: 97,
+        keyFeatures: [
+          "Simple door-knock tracking and territory assignment",
+          "Lead capture and disposition logging",
+          "Route planning for canvassing crews",
+          "Affordable pricing for high-headcount canvassing teams",
+        ],
+        toolsUrl: "/tools/knockio",
+        website: "https://knockio.com",
+        logo: "🚪",
+      },
+    ],
+    whyThisStack:
+      "Mid-market roofing companies don't need three tools. They need one excellent platform (SalesRabbit) that handles the full sales motion from territory to proposal, with an optional second tool (Knockio) if they're running a separate canvassing-only tier at volume.\n\nThe Roofle acquisition makes the SalesRabbit-only approach viable for the first time. Previously, roofing companies needed SalesRabbit for canvassing and a separate proposal tool (AccuLynx, JobNimbus). Now SalesRabbit + Roofle handles both at a single price point. For mid-market operations where simplicity matters, this two-in-one approach reduces training overhead significantly.\n\nAdd Knockio only if you're running high-volume door-knockers separately from your closer team and want to save on per-seat costs for the canvassing tier.",
+    verdict:
+      "Mid-market roofing: SalesRabbit as your platform. Add Knockio only if running a dedicated lower-cost canvassing tier. The Roofle acquisition makes single-platform roofing viable.",
+    faqs: [
+      {
+        question: "What is the best roofing sales software for 20-rep teams?",
+        answer:
+          "SalesRabbit is the best roofing sales software for teams in the 10–50 rep range. The $39/user/mo Team plan includes territory management, DataGrid AI lead scoring, the Roofle proposal integration, and training content — everything a mid-market roofing team needs without enterprise complexity or cost.",
+      },
+      {
+        question: "Do I need a separate proposal tool for roofing D2D sales?",
+        answer:
+          "No longer, as of January 2026. SalesRabbit's acquisition of Roofle adds e-commerce roof pricing, AI-assisted financing, and digital proposals directly into the SalesRabbit platform. Mid-market roofing companies that previously ran SalesRabbit + AccuLynx can now consolidate to SalesRabbit + Roofle.",
+      },
+    ],
+    lastUpdated: "2026-03-11",
+  },
+
+  {
+    slug: "telecom-smb",
+    category: "industry",
+    industry: "Telecom",
+    title: "SMB Telecom & Fiber Sales Stack (2026)",
+    headline: "The Right D2D Sales Stack for SMB Telecom and Fiber Companies",
+    metaDescription:
+      "The best field sales tech stack for SMB telecom and fiber companies running D2D campaigns in 2026. Tools, pricing, and integration strategy for ISPs and fiber providers.",
+    icon: "📡",
+    heroGradient: "linear-gradient(135deg, #0c4a6e 0%, #0369a1 50%, #38bdf8 100%)",
+    totalCostLow: "$20",
+    totalCostHigh: "$64",
+    totalCostNote: "per rep/mo for 5–30 rep telecom D2D teams",
+    intro:
+      "Telecom and fiber D2D sales is one of the fastest-growing applications of canvassing software. As fiber providers expand into new markets, they're increasingly using structured D2D campaigns to drive residential sign-ups in newly serviceable zones. The economics work: a $50–100/month fiber customer acquired at $150–200 CAC generates 18–24 month payback, similar to pest control economics.\n\nSMB telecom companies — regional ISPs, CLEC fiber providers, and broadband co-ops — typically run smaller D2D operations (5–30 reps) and need tools that match their scale and budget. Enterprise telecom platforms with $75/user/mo pricing don't make sense for a 10-rep regional fiber buildout campaign.\n\nThis guide is designed for SMB telecom and fiber companies running their first or second D2D campaign and looking for the right tools at the right price point.",
+    whoIsItFor:
+      "Regional ISPs, fiber providers, CLECs, and broadband companies with 5–30 field reps running structured D2D campaigns in newly serviceable residential zones.",
+    tools: [
+      {
+        slug: "repmove",
+        name: "RepMove",
+        role: "Primary canvassing platform for SMB telecom D2D campaigns",
+        why:
+          "RepMove's $20/user/mo pricing and no-minimum structure make it the most cost-effective starting point for SMB telecom D2D operations. At a 15-rep fiber campaign, RepMove costs $300/month vs $600/month for SalesRabbit — a meaningful savings when CAC is a critical metric. The 4.4/5 G2 rating confirms it does the job well at this scale.",
+        price: "$20/user/mo",
+        priceNote: "no minimum reps required",
+        rating: 4.4,
+        reviewCount: 186,
+        keyFeatures: [
+          "Territory assignment and door tracking",
+          "Lead capture and disposition logging",
+          "Route planning for structured fiber buildout zones",
+          "Manager dashboard for campaign performance",
+          "No minimum rep count — scales from 1 to 50",
+        ],
+        toolsUrl: "/tools/repmove",
+        website: "https://repmove.com",
+        logo: "📱",
+      },
+      {
+        slug: "spotio",
+        name: "SPOTIO",
+        role: "Upgrade path for growing telecom D2D teams (20+ reps)",
+        why:
+          "When SMB telecom teams scale past 20 reps or add CRM integration requirements, SPOTIO is the right upgrade from RepMove. Its territory management for network buildout zones, CRM integration for provisioning systems, and analytics for cost-per-door tracking are all relevant for telecom D2D at scale. The $25/user/mo entry price keeps it competitive.",
+        price: "$25/user/mo",
+        priceNote: "enterprise tiers available",
+        rating: 4.3,
+        reviewCount: 528,
+        keyFeatures: [
+          "Territory management by network zone or service availability",
+          "CRM integration for provisioning system connection",
+          "Cost-per-door and cost-per-acquisition analytics",
+          "Multi-territory management for multi-market fiber launches",
+          "5,000+ integrations for telecom tech stack connection",
+        ],
+        toolsUrl: "/tools/spotio",
+        website: "https://spotio.com",
+        logo: "📍",
+      },
+    ],
+    whyThisStack:
+      "SMB telecom D2D doesn't need an expensive platform on day one. Start with RepMove at $20/user/mo — it handles territory assignment, door tracking, and basic campaign management well at 5–20 rep scale. As your campaign scales or you need CRM integration with provisioning systems, migrate to SPOTIO.\n\nThe migration path from RepMove to SPOTIO is relatively smooth compared to jumping straight to enterprise platforms. Both tools share similar workflow concepts, and most SMB telecom orgs make the switch when they hit 20–25 reps or when CRM integration becomes a bottleneck.\n\nOne caveat: neither tool includes native fiber serviceability lookup — that requires custom integration with your network management system. SPOTIO's API and integration library makes this integration most feasible when it becomes necessary.",
+    verdict:
+      "SMB telecom: Start with RepMove ($20/user/mo) for 5–20 reps. Scale to SPOTIO when you hit 20+ reps or need CRM/provisioning integration.",
+    faqs: [
+      {
+        question: "What D2D software do fiber internet companies use?",
+        answer:
+          "Smaller fiber providers and regional ISPs commonly use RepMove ($20/user/mo) for cost-effective campaign management. Larger telecom companies and enterprise fiber operations typically use SPOTIO for its territory analytics and enterprise integration capabilities. Most telecom D2D teams require custom integration with their provisioning systems regardless of platform.",
+      },
+      {
+        question: "How do you organize a fiber D2D campaign with software?",
+        answer:
+          "The standard approach is to define territory zones based on network serviceability (which addresses can receive service), assign reps to zones using the canvassing platform's territory management, track every door with disposition logging, and sync converted leads to the provisioning CRM. RepMove handles this workflow well for SMB operations; SPOTIO for enterprise.",
+      },
+    ],
+    lastUpdated: "2026-03-11",
+  },
+
+  {
+    slug: "home-security-smb",
+    category: "industry",
+    industry: "Home Security",
+    title: "Home Security D2D Sales Stack for SMB Teams (2026)",
+    headline: "The Home Security D2D Sales Stack That Works for Small and Mid-Market Teams",
+    metaDescription:
+      "The best D2D sales tech stack for home security companies in 2026. Tools, pricing, and workflow strategy for SMB home security operations running door-to-door campaigns.",
+    icon: "🔐",
+    heroGradient: "linear-gradient(135deg, #1e1b4b 0%, #3730a3 50%, #6366f1 100%)",
+    totalCostLow: "$39",
+    totalCostHigh: "$78",
+    totalCostNote: "per rep/mo for 5–50 rep home security teams",
+    intro:
+      "Home security is one of D2D sales' most lucrative verticals. Recurring monitoring contracts worth $30–60/month per customer create lifetime values of $1,500–$3,600 at typical churn rates — economics that justify $200–400 customer acquisition costs. The result is a vertical that invests heavily in D2D canvassing and expects high rep performance.\n\nHome security D2D has specific requirements that differ from roofing or solar. The product is an in-home demonstration and installation commitment — not a same-day close on a visible problem. Reps need to capture detailed lead information, schedule follow-up appointments, and manage a longer consideration cycle than the typical storm-restoration sale. Software that handles roofing D2D well may not fit the home security motion.\n\nHere's the right D2D tech stack for SMB home security companies running effective canvassing campaigns.",
+    whoIsItFor:
+      "Home security companies (5–75 reps) running residential D2D campaigns for monitoring system installations. Includes ADT dealers, Vivint sub-dealers, and independent home security operations.",
+    tools: [
+      {
+        slug: "salesrabbit",
+        name: "SalesRabbit",
+        role: "Primary D2D platform — canvassing, training & CRM",
+        why:
+          "SalesRabbit is widely used in home security D2D because of its fit with the multi-step sales motion: door knock → lead capture → appointment scheduling → follow-up management. The training library is particularly valuable for home security, where product knowledge and objection handling scripts need to be consistently delivered. Territory heat maps prevent rep overlap in high-density residential areas.",
+        price: "$39/user/mo",
+        priceNote: "annual billing · Free Lite for evaluation",
+        rating: 4.3,
+        reviewCount: 528,
+        keyFeatures: [
+          "Territory heat maps for residential neighborhood management",
+          "Lead capture with appointment scheduling workflow",
+          "Video training library for home security product training",
+          "Gamified leaderboards for competitive home security campaigns",
+          "DataGrid AI for identifying high-propensity home security leads",
+          "Follow-up lead management for the multi-touch home security sale",
+        ],
+        toolsUrl: "/tools/salesrabbit",
+        website: "https://salesrabbit.com",
+        logo: "🐇",
+      },
+      {
+        slug: "knockbase",
+        name: "Knockbase",
+        role: "Affordable canvassing layer for budget-sensitive home security teams",
+        why:
+          "For home security teams that find SalesRabbit's $39/user/mo pricing heavy for their current scale, Knockbase offers core canvassing capability at lower cost. Its appointment-tracking and door-disposition workflow suits the home security multi-touch motion. Consider Knockbase as a starter tool before scaling to SalesRabbit.",
+        price: "Contact for pricing",
+        priceNote: "typically lower than SalesRabbit",
+        rating: 4.2,
+        reviewCount: 143,
+        keyFeatures: [
+          "Door tracking and disposition logging",
+          "Territory assignment for residential campaigns",
+          "Lead capture for appointment scheduling",
+          "Affordable pricing for small home security operations",
+        ],
+        toolsUrl: "/tools/knockbase",
+        website: "https://knockbase.com",
+        logo: "🏠",
+      },
+    ],
+    whyThisStack:
+      "Home security D2D rewards the platforms best at managing multi-touch lead workflows — because not every door closes on the first knock. Reps often knock, leave a door hanger, follow up in 3 days, and close on the second visit. SalesRabbit's lead disposition system and follow-up management handle this motion well.\n\nFor teams just starting out or operating on tight margins (ADT dealers, smaller independents), Knockbase provides the canvassing fundamentals at lower cost. The downside is missing SalesRabbit's training library — a meaningful loss in a vertical where product knowledge and objection handling directly drive close rates.\n\nMost successful home security D2D operations eventually graduate to SalesRabbit as they scale past 15 reps. The training investment alone — reducing time-to-productive for new reps — typically justifies the per-seat cost increase.",
+    verdict:
+      "Home security D2D: SalesRabbit for teams of 10+ reps — the training library and follow-up management justify the cost. Knockbase for smaller teams starting out.",
+    faqs: [
+      {
+        question: "What software do home security door-to-door companies use?",
+        answer:
+          "SalesRabbit is the most widely used D2D platform in home security sales. Its training library, territory management, and lead tracking are well-matched to the multi-touch home security sales motion. Knockbase and RepMove are used by smaller home security operations looking for lower-cost alternatives.",
+      },
+      {
+        question: "How do you manage home security D2D leads with software?",
+        answer:
+          "The standard workflow is: knock door → log disposition in canvassing app → if interested, capture lead with contact info and preferred appointment time → follow-up reminder triggered automatically → rep returns for in-home demo. SalesRabbit's lead management system handles this multi-touch workflow natively.",
+      },
+    ],
+    lastUpdated: "2026-03-11",
+  },
+
+  {
+    slug: "pest-control-growth",
+    category: "industry",
+    industry: "Pest Control",
+    title: "Pest Control D2D Sales Stack for Growing Teams (2026)",
+    headline: "The D2D Sales Stack That Powers High-Performance Pest Control Summer Campaigns",
+    metaDescription:
+      "The best D2D tech stack for pest control companies running summer canvassing campaigns in 2026. Tools, pricing, and strategy for operations scaling from 10 to 50 reps.",
+    icon: "🦟",
+    heroGradient: "linear-gradient(135deg, #14532d 0%, #166534 50%, #22c55e 100%)",
+    totalCostLow: "$20",
+    totalCostHigh: "$58",
+    totalCostNote: "per rep/mo for 10–50 rep seasonal pest control teams",
+    intro:
+      "Pest control D2D is one of the most process-driven sales environments in the industry. The summer campaign model — recruiting 20–50 college-age reps, deploying them across residential neighborhoods for 90 days, then scaling back down — is a well-proven business model with strong unit economics. Recurring service contracts at $400–800/year per customer mean even a 25-rep summer team can add $500K+ in annual contract value in a single season.\n\nThe software challenge in pest control is unique: rapid seasonal scaling (onboarding 30 reps in 2 weeks), rep inexperience (many are first-time salespeople), high competitive intensity (multiple pest control companies working the same neighborhoods in summer), and the recurring-contract nature of the sale (vs one-time transactions). The platform needs to handle all of these simultaneously.\n\nThis guide covers the D2D stack optimized specifically for pest control summer campaign operations.",
+    whoIsItFor:
+      "Pest control companies running seasonal D2D campaigns — primarily in the April–September summer window — with 10–75 reps. Includes both independent companies and franchise operations.",
+    tools: [
+      {
+        slug: "salesrabbit",
+        name: "SalesRabbit",
+        role: "Primary D2D platform — canvassing, training & summer campaign management",
+        why:
+          "SalesRabbit is the dominant platform in pest control D2D, partly because its training library directly addresses the seasonal rep problem. Getting 30 new college hires productive in under 2 weeks requires structured training content — SalesRabbit's video library handles this. The gamification system drives summer performance in the competitive campaign environment. Territory heat maps protect experienced rep areas from being overlapped by newer recruits.",
+        price: "$39/user/mo",
+        priceNote: "annual billing · Free Lite for evaluation",
+        rating: 4.3,
+        reviewCount: 528,
+        keyFeatures: [
+          "Video training library for rapid seasonal rep onboarding",
+          "Gamified leaderboards for summer campaign competition",
+          "Territory heat maps and protection for experienced reps",
+          "DataGrid AI for high-propensity lead identification",
+          "GPS tracking and real-time rep activity for summer managers",
+          "Free Lite tier for small pest control operations evaluating the platform",
+        ],
+        toolsUrl: "/tools/salesrabbit",
+        website: "https://salesrabbit.com",
+        logo: "🐇",
+      },
+      {
+        slug: "repmove",
+        name: "RepMove",
+        role: "Budget alternative for cost-sensitive pest control companies",
+        why:
+          "For pest control companies where per-seat cost is a critical constraint — particularly franchise operators or companies running large canvassing crews — RepMove's $20/user/mo pricing delivers meaningful savings at scale. A 40-rep summer team on RepMove costs $800/month vs $1,560/month on SalesRabbit. The trade-off is losing the training library and gamification, which have real value in summer campaigns.",
+        price: "$20/user/mo",
+        priceNote: "no minimum reps — good for seasonal scaling",
+        rating: 4.4,
+        reviewCount: 186,
+        keyFeatures: [
+          "Core door tracking and territory assignment",
+          "Lead management for recurring service agreement tracking",
+          "Manager dashboard for daily campaign performance",
+          "No minimum reps — easy seasonal scale-up and scale-down",
+          "Affordable pricing for high-headcount summer campaigns",
+        ],
+        toolsUrl: "/tools/repmove",
+        website: "https://repmove.com",
+        logo: "📱",
+      },
+    ],
+    whyThisStack:
+      "Pest control summer campaigns have two cost drivers that pull in opposite directions: rep headcount (40 reps × $39/user/mo = $1,560/month in software alone) and rep productivity (trained reps close more contracts, justifying higher software cost). The right platform choice depends on which constraint matters more to your operation.\n\nIf rep inexperience is your primary challenge — you're bringing on 30 first-time salespeople each summer and need them productive fast — SalesRabbit's training library is worth the $39/user/mo premium. The training investment pays back quickly when it reduces ramp time from 3 weeks to 1 week.\n\nIf per-seat cost is the binding constraint — you're running a tight margin franchise operation or optimizing for contribution margin — RepMove's $20/user/mo delivers core canvassing functionality at the lowest transparent price in the category.\n\nFor most growing pest control companies, start on SalesRabbit during the season you're investing in training, and evaluate whether the lift justifies the premium before next summer's campaign.",
+    verdict:
+      "Pest control summer campaigns: SalesRabbit if rep training and performance management matter. RepMove if controlling per-rep software cost is the priority.",
+    faqs: [
+      {
+        question: "What software do pest control door-to-door companies use?",
+        answer:
+          "SalesRabbit is the most widely used D2D platform in pest control — its training library, gamification, and territory management are all well-matched to summer campaign operations. RepMove is a popular lower-cost alternative for pest control companies prioritizing margin over platform features. Many summer canvassers learn SalesRabbit at their first pest control job.",
+      },
+      {
+        question: "How do you onboard seasonal pest control reps quickly with software?",
+        answer:
+          "SalesRabbit's video training library is the most effective tool for rapid seasonal onboarding. Reps can complete product and sales training modules within the app during their first day, reducing ramp time significantly. Territory assignment through the platform's map interface ensures new reps are working productively from day one without management bottlenecks.",
+      },
+      {
+        question: "Can pest control canvassing software handle seasonal rep headcount changes?",
+        answer:
+          "Yes — both SalesRabbit and RepMove support adding and removing users as your seasonal headcount changes. RepMove has no stated minimum reps, making it particularly flexible for seasonal operations. SalesRabbit's annual billing can create friction around seasonal scaling — verify the contract terms for your specific plan before committing if seasonal scaling is a priority.",
+      },
+    ],
+    lastUpdated: "2026-03-11",
+  },
 ];
 
 export const getStack = (slug: string) => stacks.find((s) => s.slug === slug);

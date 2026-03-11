@@ -22,8 +22,10 @@ export const affiliateUrls: Record<string, string> = {
   // ─────────────────────────────────────────────
 
   // InSitu Sales — 20% recurring commission (~$68/customer/month)
-  // Program: Direct — contact: affiliate@insitusales.com
-  // "insitu-sales": "https://insitusales.com/?ref=fieldsalesstack",
+  // Program: Direct — REFERRAL CODE received: "Fieldsalestools"
+  // ⚠️  TODO: Get full tracking URL from InSitu (ask if it's insitusales.com?ref=Fieldsalestools or similar)
+  // Once confirmed, uncomment and replace YOUR_REFERRAL_CODE:
+  // "insitu-sales": "https://insitusales.com/?ref=Fieldsalestools",
 
   // ─────────────────────────────────────────────
   // ⏳ PENDING APPROVAL

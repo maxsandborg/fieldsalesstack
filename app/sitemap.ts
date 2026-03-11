@@ -4,6 +4,7 @@ import { tools, getAllSlugs } from "../data/tools";
 import { comparisons, getAllComparisonSlugs } from "../data/comparisons";
 import { industries } from "../data/industries";
 import { reviewedSlugs } from "../data/reviews";
+import { getAllBestForSlugs } from "../data/best-for";
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const baseUrl = "https://www.fieldsalesstack.com";
@@ -68,6 +69,14 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority: 0.75,
   }));
 
+  // ── Best-for buyer's guide pages ─────────────────────────────────────────────
+  const bestForUrls = getAllBestForSlugs().map((slug) => ({
+    url: `${baseUrl}/best/${slug}`,
+    lastModified: now,
+    changeFrequency: "monthly" as const,
+    priority: 0.9, // High-intent buyer pages — top priority
+  }));
+
   return [
     ...staticPages,
     ...stackUrls,
@@ -75,5 +84,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
     ...compareUrls,
     ...industryUrls,
     ...alternativeUrls,
+    ...bestForUrls,
   ];
 }
