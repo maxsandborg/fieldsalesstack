@@ -4,7 +4,7 @@ export default function Header() {
   return (
     <header
       style={{
-        background: "#0f2340",
+        background: "#0a1e38",
         borderBottom: "1px solid rgba(255,255,255,0.08)",
         position: "sticky",
         top: 0,
@@ -42,12 +42,12 @@ export default function Header() {
             <span style={{ color: "#fff", fontWeight: 800, fontSize: 16, letterSpacing: "-0.3px" }}>
               FieldSalesTools
             </span>
-            <span style={{ color: "#64748b", fontSize: 12, marginLeft: 4 }}>.com</span>
+            <span style={{ color: "#4f9ef8", fontSize: 14, fontWeight: 400, marginLeft: 1 }}>.com</span>
           </div>
         </Link>
 
         {/* Nav */}
-        <nav style={{ display: "flex", alignItems: "center", gap: 4 }}>
+        <nav style={{ display: "flex", alignItems: "center", gap: 2 }}>
           <Link
             href="/tools"
             style={{
@@ -60,19 +60,6 @@ export default function Header() {
             }}
           >
             Tools
-          </Link>
-          <Link
-            href="/stacks"
-            style={{
-              color: "#94a3b8",
-              textDecoration: "none",
-              fontSize: 14,
-              fontWeight: 500,
-              padding: "6px 12px",
-              borderRadius: 6,
-            }}
-          >
-            Stacks
           </Link>
           <Link
             href="/compare"
@@ -101,19 +88,33 @@ export default function Header() {
             Industries
           </Link>
           <Link
-            href="/tools"
+            href="/stacks"
+            style={{
+              color: "#94a3b8",
+              textDecoration: "none",
+              fontSize: 14,
+              fontWeight: 500,
+              padding: "6px 12px",
+              borderRadius: 6,
+            }}
+          >
+            Stacks
+          </Link>
+          <Link
+            href="/advertise"
             style={{
               background: "#1d6ce8",
               color: "#fff",
               textDecoration: "none",
               fontSize: 13,
               fontWeight: 600,
-              padding: "7px 14px",
+              padding: "7px 16px",
               borderRadius: 8,
-              marginLeft: 8,
+              marginLeft: 10,
+              whiteSpace: "nowrap",
             }}
           >
-            Browse Tools →
+            Get Listed →
           </Link>
         </nav>
       </div>
